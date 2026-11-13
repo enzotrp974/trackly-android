@@ -1,6 +1,8 @@
 # Spec: public launch (Google Play first, iOS later)
 
-Status: accepted by the maintainer, 13 November 2026. Tracking issue: see "Public launch" in the issue tracker.
+Status: **archived** (13 November 2026). The app first needs a broader redesign so it is useful to many people,
+not just its first user. A design session will come first, then a new spec. Kept for reference only; its tracking
+issue (#3) and sub-issues were closed as not planned.
 
 ## Goal
 
