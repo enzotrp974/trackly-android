@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "timezone": "Europe/Zurich",
+  "day_boundary": "00:00",
+  "context": {
+    "phase": "cut",
+    "height_cm": 175,
+    "maintenance_kcal_user_estimate": 2900,
+    "typical_steps_per_day_user_estimate": 12000
+  },
+  "current_reference_weight_kg": 72.5,
+  "goals": [
+    {
+      "effective_from": "2026-09-01",
+      "kcal": 2600,
+      "reference_weight_kg": 74.0,
+      "protein_ideal_g_per_kg": 2.0,
+      "protein_min_g_per_kg": 1.6,
+      "fat_g_per_kg": 0.9,
+      "carbs_rule": "remaining_calories",
+      "fiber_g_per_1000_kcal": 14.0,
+      "fiber_is_bonus": true
+    },
+    {
+      "effective_from": "2026-09-04",
+      "kcal": 2350,
+      "kcal_limit": 2450,
+      "protein_ideal_g_per_kg": 2.1,
+      "protein_min_g_per_kg": 1.7,
+      "fat_g_per_kg": 0.85,
+      "carbs_rule": "remaining_calories",
+      "fiber_g_per_1000_kcal": 14.0,
+      "fiber_is_bonus": true
+    }
+  ]
+}

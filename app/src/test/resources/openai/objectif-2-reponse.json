@@ -1,0 +1,42 @@
+{
+  "id": "resp_objectif_2",
+  "object": "response",
+  "status": "completed",
+  "error": null,
+  "incomplete_details": null,
+  "model": "gpt-6.1-sol",
+  "output": [
+    {
+      "type": "reasoning",
+      "id": "rs_objectif_2",
+      "summary": [],
+      "encrypted_content": "gAAAA-simule-objectif_2"
+    },
+    {
+      "type": "message",
+      "id": "msg_objectif_2",
+      "status": "completed",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "C’est fait : ton objectif passe à 2 300 kcal dès aujourd’hui. J’ai ajusté les glucides pour que les macros suivent.",
+          "annotations": [],
+          "logprobs": []
+        }
+      ]
+    }
+  ],
+  "usage": {
+    "input_tokens": 3300,
+    "input_tokens_details": {
+      "cached_tokens": 2400,
+      "cache_write_tokens": 0
+    },
+    "output_tokens": 50,
+    "output_tokens_details": {
+      "reasoning_tokens": 10
+    },
+    "total_tokens": 3350
+  }
+}

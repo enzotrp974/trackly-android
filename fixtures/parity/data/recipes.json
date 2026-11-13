@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "recipes": [
+    {
+      "recipe_id": "porridge-essai",
+      "version": 1,
+      "name": "Porridge",
+      "aliases": [
+        "porridge"
+      ],
+      "active": true,
+      "default_match_when_unqualified": true,
+      "ingredients": [
+        {
+          "ingredient_id": "flocons",
+          "label": "Flocons d'avoine",
+          "quantity_g": 50,
+          "nutrition_per_100": {
+            "kcal": 370,
+            "protein_g": 13,
+            "carbs_g": 59,
+            "fat_g": 7,
+            "fiber_g": 10
+          }
+        },
+        {
+          "ingredient_id": "lait",
+          "label": "Lait demi-écrémé",
+          "quantity_g": 200,
+          "nutrition_per_100": {
+            "kcal": 46,
+            "protein_g": 3.3,
+            "carbs_g": 4.8,
+            "fat_g": 1.5,
+            "fiber_g": null
+          }
+        }
+      ]
+    },
+    {
+      "recipe_id": "porridge-essai",
+      "version": 2,
+      "name": "Porridge",
+      "aliases": [
+        "porridge"
+      ],
+      "active": true,
+      "default_match_when_unqualified": true,
+      "ingredients": [
+        {
+          "ingredient_id": "flocons",
+          "label": "Flocons d'avoine",
+          "quantity_g": 60,
+          "nutrition_per_100": {
+            "kcal": 370,
+            "protein_g": 13,
+            "carbs_g": 59,
+            "fat_g": 7,
+            "fiber_g": 10
+          }
+        },
+        {
+          "ingredient_id": "lait",
+          "label": "Lait demi-écrémé",
+          "quantity_g": 200,
+          "nutrition_per_100": {
+            "kcal": 46,
+            "protein_g": 3.3,
+            "carbs_g": 4.8,
+            "fat_g": 1.5,
+            "fiber_g": null
+          }
+        }
+      ]
+    },
+    {
+      "recipe_id": "salade-essai",
+      "version": 1,
+      "name": "Salade composée",
+      "active": false,
+      "ingredients": [],
+      "source_template": {
+        "composants": [
+          "salade verte",
+          "sauce",
+          "graines"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "resp_objectif_inco_2",
+  "object": "response",
+  "status": "completed",
+  "error": null,
+  "incomplete_details": null,
+  "model": "gpt-6.1-sol",
+  "output": [
+    {
+      "type": "reasoning",
+      "id": "rs_objectif_inco_2",
+      "summary": [],
+      "encrypted_content": "gAAAA-raisonnement-chiffre-simule-objectif_inco_2"
+    },
+    {
+      "type": "function_call",
+      "id": "fc_objectif_inco_2",
+      "call_id": "call_objectif_inco_2",
+      "name": "set_goal",
+      "arguments": "{\"kcal\": 2300, \"protein_g\": 140, \"carbs_g\": 278, \"fat_g\": 70, \"from_date\": null}",
+      "status": "completed"
+    }
+  ],
+  "usage": {
+    "input_tokens": 3000,
+    "input_tokens_details": {
+      "cached_tokens": 2400,
+      "cache_write_tokens": 0
+    },
+    "output_tokens": 210,
+    "output_tokens_details": {
+      "reasoning_tokens": 150
+    },
+    "total_tokens": 3210
+  },
+  "tool_usage": {
+    "web_search": {
+      "num_requests": 0
+    }
+  }
+}

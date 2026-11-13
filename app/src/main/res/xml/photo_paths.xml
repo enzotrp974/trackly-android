@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Fichiers temporaires de l'appareil photo : uniquement le dossier « photos » du cache privé de l'app.
+  Le fichier est supprimé dès que la photo est lue ; il n'est jamais écrit dans la galerie.
+-->
+<paths>
+    <cache-path name="photos" path="photos/" />
+</paths>

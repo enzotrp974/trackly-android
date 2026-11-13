@@ -1,0 +1,41 @@
+{
+  "id": "resp_undo_1",
+  "object": "response",
+  "status": "completed",
+  "error": null,
+  "incomplete_details": null,
+  "model": "gpt-6.1-sol",
+  "output": [
+    {
+      "type": "reasoning",
+      "id": "rs_undo_1",
+      "summary": [],
+      "encrypted_content": "gAAAA-raisonnement-chiffre-simule-undo_1"
+    },
+    {
+      "type": "function_call",
+      "id": "fc_undo_1",
+      "call_id": "call_undo_1",
+      "name": "undo_action",
+      "arguments": "{\"action_id\": null}",
+      "status": "completed"
+    }
+  ],
+  "usage": {
+    "input_tokens": 2850,
+    "input_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 2400
+    },
+    "output_tokens": 410,
+    "output_tokens_details": {
+      "reasoning_tokens": 320
+    },
+    "total_tokens": 3260
+  },
+  "tool_usage": {
+    "web_search": {
+      "num_requests": 0
+    }
+  }
+}

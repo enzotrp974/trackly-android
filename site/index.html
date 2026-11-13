@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trackly: say what you ate</title>
+<meta name="description" content="Trackly is an open-source Android food log with an AI assistant. Say, snap or type what you ate; the app computes the numbers and stores your journal on your phone.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#F5F8FC" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0B1430" media="(prefers-color-scheme: dark)">
+<meta property="og:title" content="Trackly: say what you ate">
+<meta property="og:description" content="Open-source Android food log. Talk, snap or type; the app does the math.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://enzotrp974.github.io/trackly-android/assets/og.png">
+<link rel="alternate" hreflang="en" href="https://enzotrp974.github.io/trackly-android/">
+<link rel="alternate" hreflang="fr" href="https://enzotrp974.github.io/trackly-android/fr/">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/bricolage_grotesque.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <a class="brand" href="./" aria-label="Trackly home">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="7.5" fill="none" stroke="currentColor" stroke-width="3"/></svg>
+    <span>Trackly</span>
+  </a>
+  <nav aria-label="Main">
+    <a href="#how">How it works</a>
+    <a href="#privacy">Privacy</a>
+    <a href="#ai">AI</a>
+    <a class="lang" href="fr/" hreflang="fr" lang="fr">Français</a>
+    <a class="gh" href="https://github.com/enzotrp974/trackly-android">GitHub</a>
+  </nav>
+</header>
+
+<main id="main">
+
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-copy">
+    <h1 id="hero-title">Say what you ate.<br>Trackly does the math.</h1>
+    <p class="lede">An open-source Android food log with an AI assistant. Talk, snap a label or type a line. The assistant works through tools the app runs, the app computes every number, and your journal lives on your phone.</p>
+    <div class="ctas">
+      <a class="btn primary" href="https://github.com/enzotrp974/trackly-android">Get the code on GitHub</a>
+      <a class="btn" href="#waitlist">Join the waitlist</a>
+    </div>
+    <p class="fine">Free. Android 8 and up. Bring your own OpenAI API key. The interface is in French today; English is next.</p>
+  </div>
+
+  <div class="ledger" aria-label="Example: logging a breakfast by voice">
+    <div class="ledger-head">
+      <span class="ledger-label">Left today</span>
+      <span class="ledger-num" data-from="1880" data-to="1468"><span class="n">1&#8239;468</span> <small>kcal</small></span>
+    </div>
+    <div class="bar" aria-hidden="true"><i class="bar-fill"></i></div>
+    <ol class="script" aria-live="off">
+      <li class="say"><span class="who">You, by voice</span><q class="typed">Two eggs, a slice of toast with butter and a flat white.</q></li>
+      <li class="tool"><span class="who">Assistant</span><code>record_consumption(3 items, breakfast)</code></li>
+      <li class="card">
+        <div class="card-row"><b>Breakfast</b><span>412 kcal</span></div>
+        <ul class="card-items"><li>2 eggs<span>156</span></li><li>Toast with butter<span>168</span></li><li>Flat white<span>88</span></li></ul>
+        <div class="card-foot"><span class="tick">Logged, computed by the app</span><button type="button" tabindex="-1">Undo</button></div>
+      </li>
+    </ol>
+    <button class="replay" type="button" aria-label="Replay the example">Replay</button>
+  </div>
+</section>
+
+<section class="demo" aria-labelledby="demo-title">
+  <h2 id="demo-title" class="sr">Demo video</h2>
+  <div class="video-slot" id="video-slot">
+    <div class="video-placeholder">
+      <p><strong>Demo video</strong><br>A one-minute tour of a real day with Trackly is on its way.</p>
+    </div>
+  </div>
+</section>
+
+<section class="how" id="how" aria-labelledby="how-title">
+  <h2 id="how-title">From a sentence to a logged meal</h2>
+  <ol class="steps">
+    <li>
+      <h3>You say it, your way</h3>
+      <p>Type a line, dictate with live transcription, attach a photo of a plate or a nutrition label, or start a hands-free voice call while you cook.</p>
+    </li>
+    <li>
+      <h3>The assistant uses the app's tools</h3>
+      <p>It looks up your saved products and dishes, searches the web for a product it does not know, and asks one short question when something is ambiguous. It never does arithmetic for you: totals, what is left and goals are computed by the app from your entries.</p>
+    </li>
+    <li>
+      <h3>You stay in charge of the journal</h3>
+      <p>Only what you say you ate gets logged, and you see exactly what was written. Suggestions wait for your tap on Log. Every entry undoes in one tap, and corrections keep the earlier version.</p>
+    </li>
+  </ol>
+</section>
+
+<section class="shots" aria-labelledby="shots-title">
+  <h2 id="shots-title">The real app</h2>
+  <p class="section-lede">Real screens with a made-up profile and journal: the first three on an Android emulator, the call and the review from the app's screenshot tests.</p>
+  <div class="strip" tabindex="0" aria-label="App screenshots, scroll horizontally">
+    <figure><img src="assets/shots/day.webp" width="540" height="1200" alt="Day screen: 1,880 kcal left, protein, carbs and fat bars, and a breakfast entry." loading="lazy"><figcaption>Your day at a glance: what is left, macros, meals.</figcaption></figure>
+    <figure><img src="assets/shots/chat.webp" width="540" height="1200" alt="Chat with the assistant and a logged meal card." loading="lazy"><figcaption>Tell the assistant; get a card you can undo.</figcaption></figure>
+    <figure><img src="assets/shots/dictation.webp" width="540" height="1200" alt="Live dictation in the message field." loading="lazy"><figcaption>Live dictation, words appear as you speak.</figcaption></figure>
+    <figure><img src="assets/shots/call.webp" width="540" height="1200" alt="Voice call screen with the assistant." loading="lazy"><figcaption>A voice call for when your hands are busy.</figcaption></figure>
+    <figure><img src="assets/shots/review.webp" width="540" height="1200" alt="Weekly review page with charts." loading="lazy"><figcaption>A weekly review built from your own numbers.</figcaption></figure>
+  </div>
+</section>
+
+<section class="features" aria-labelledby="features-title">
+  <h2 id="features-title">What it does</h2>
+  <dl class="rows">
+    <div><dt>Live dictation</dt><dd>Speak into the message field and watch the text appear, or transcribe after you stop. Food words you use often are passed as hints.</dd></div>
+    <div><dt>Photos</dt><dd>Snap a nutrition label to read it, or a plate to get an estimate with its assumptions shown. Photos are sent for that request and not kept by the app.</dd></div>
+    <div><dt>Voice call</dt><dd>A short spoken conversation: describe your meal, answer one question, hang up. A second model reviews the call and logs the meals.</dd></div>
+    <div><dt>Web search</dt><dd>For a branded product it has never seen, the assistant searches the web and shows its sources.</dd></div>
+    <div><dt>Your products and dishes</dt><dd>Products you eat often are remembered, with shortcuts and dish variants, so the next log is one sentence.</dd></div>
+    <div><dt>Goals and weekly review</dt><dd>Dated calorie and macro goals, a remaining-today view, and a Monday review page with your week's numbers and weight trend.</dd></div>
+    <div><dt>Cost you can see</dt><dd>Choose the model in settings and the reasoning level per message; the app shows an estimate of this month's API spend.</dd></div>
+    <div><dt>Backup</dt><dd>Export a file anytime, or turn on automatic backup to your own Google Drive. Off by default.</dd></div>
+  </dl>
+</section>
+
+<section class="privacy" id="privacy" aria-labelledby="privacy-title">
+  <h2 id="privacy-title">Where your data goes</h2>
+  <p class="section-lede">Trackly has no server and no account. Here is the full list.</p>
+  <div class="flows">
+    <div class="flow">
+      <h3>On your phone</h3>
+      <p>Your journal, goals, products, dishes, chat history and reviews, in the app's private storage. Your API key is encrypted with the Android Keystore.</p>
+    </div>
+    <div class="flow">
+      <h3>Sent to OpenAI</h3>
+      <p>Each AI request: your message or photo, plus the context the assistant needs for that turn (for example today's entries and goals). Sent with your key, under your OpenAI account's terms.</p>
+    </div>
+    <div class="flow">
+      <h3>Your Google Drive, only if you turn it on</h3>
+      <p>A copy of the database, sent over HTTPS to a folder the app creates, with the narrow drive.file permission that only sees files Trackly made.</p>
+    </div>
+  </div>
+  <p class="fine">No analytics, no ads, no trackers, in the app or on this site.</p>
+</section>
+
+<section class="ai" id="ai" aria-labelledby="ai-title">
+  <h2 id="ai-title">Built on OpenAI</h2>
+  <table class="models">
+    <caption class="sr">OpenAI models and what Trackly uses them for</caption>
+    <thead><tr><th scope="col">Model or tool</th><th scope="col">Used for</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">GPT-6.1 Sol</th><td>The assistant in the chat: reads your message, calls the app's tools, answers.</td></tr>
+      <tr><th scope="row">GPT-6.1 Terra</th><td>A faster, cheaper choice for the assistant, selectable in settings.</td></tr>
+      <tr><th scope="row">gpt-live-transcribe</th><td>Live dictation while you speak.</td></tr>
+      <tr><th scope="row">gpt-live-1</th><td>The voice in hands-free calls.</td></tr>
+      <tr><th scope="row">Web search tool</th><td>Looking up products the assistant does not know, with sources.</td></tr>
+    </tbody>
+  </table>
+
+  <h3 class="sub">How you pay for the AI</h3>
+  <ul class="plans">
+    <li class="now"><span class="state">Available now</span><b>Your own OpenAI API key</b><span>Paste it or scan it as a QR code. You pay OpenAI directly for what you use.</span></li>
+    <li><span class="state">Coming soon</span><b>Sign in with ChatGPT</b><span>Use your ChatGPT plan instead of an API key.</span></li>
+    <li><span class="state">Coming soon</span><b>Optional subscription</b><span>For people who want it to just work, with no key to manage.</span></li>
+  </ul>
+  <p class="fine">Installing Trackly is free and always will be.</p>
+</section>
+
+<section class="oss" aria-labelledby="oss-title">
+  <h2 id="oss-title">Open source</h2>
+  <p>The whole app is on GitHub under the GNU AGPL-3.0: Kotlin, Jetpack Compose, Room, a pure-Kotlin rules engine and about two thousand tests. Read it, build it, fix it.</p>
+<pre class="cmd"><code>git clone https://github.com/enzotrp974/trackly-android
+cd trackly-android
+./gradlew test assembleDebug</code></pre>
+  <p><a href="https://github.com/enzotrp974/trackly-android#readme">Build instructions</a> and <a href="https://github.com/enzotrp974/trackly-android/blob/main/CONTRIBUTING.md">how to contribute</a>.</p>
+</section>
+
+<section class="waitlist" id="waitlist" aria-labelledby="waitlist-title">
+  <h2 id="waitlist-title">Get it when it lands on Google Play</h2>
+  <p>Add yourself to the waitlist issue on GitHub (a GitHub account is needed, and your username is public there). Subscribe to the issue to get the announcement.</p>
+  <a class="btn primary" href="https://github.com/enzotrp974/trackly-android/issues/1">Join the waitlist on GitHub</a>
+</section>
+
+</main>
+
+<footer class="foot">
+  <p><strong>Not medical advice.</strong> Trackly estimates food energy and nutrients to help you keep a journal. Numbers can be wrong. It does not diagnose, treat or prevent any condition. Talk to a health professional before changing your diet, especially if you are pregnant, have an eating disorder, diabetes or another medical condition.</p>
+  <p>Trackly is an independent project, not affiliated with or endorsed by OpenAI. OpenAI, ChatGPT and GPT are trademarks of OpenAI.</p>
+  <p>Code under <a href="https://github.com/enzotrp974/trackly-android/blob/main/LICENSE">AGPL-3.0</a>. Fonts: Bricolage Grotesque and Plus Jakarta Sans, <a href="assets/fonts/OFL-BricolageGrotesque.txt">SIL Open Font License</a>. This site sets no cookies and loads nothing from third parties.</p>
+</footer>
+
+<script src="assets/site.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+{
+  "id": "resp_snack_1",
+  "object": "response",
+  "status": "completed",
+  "error": null,
+  "incomplete_details": null,
+  "model": "gpt-6.1-sol",
+  "output": [
+    {
+      "type": "reasoning",
+      "id": "rs_snack_1",
+      "summary": [],
+      "encrypted_content": "gAAAA-raisonnement-chiffre-simule-snack_1"
+    },
+    {
+      "type": "function_call",
+      "id": "fc_snack_1",
+      "call_id": "call_snack_1",
+      "name": "record_consumptions",
+      "arguments": "{\"items\": [{\"food\": {\"label\": \"Barre protéinée Nuvo\", \"quantity\": 55, \"unit\": \"g\", \"kcal\": 222, \"protein_g\": 19.6, \"carbs_g\": 12, \"fat_g\": 7.7, \"fiber_g\": null, \"assumptions\": [\"Nuvo chocolat-cacahuète, ta saveur habituelle\"], \"confidence\": \"medium\"}, \"moment\": \"snack\", \"day\": null}, {\"food\": {\"label\": \"Pomme\", \"quantity\": 150, \"unit\": \"g\", \"kcal\": 78, \"protein_g\": 0.4, \"carbs_g\": 19, \"fat_g\": 0.3, \"fiber_g\": 3.6, \"assumptions\": [], \"confidence\": \"high\"}, \"moment\": \"snack\", \"day\": null}], \"question\": null}",
+      "status": "completed"
+    }
+  ],
+  "usage": {
+    "input_tokens": 2850,
+    "input_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 2400
+    },
+    "output_tokens": 410,
+    "output_tokens_details": {
+      "reasoning_tokens": 320
+    },
+    "total_tokens": 3260
+  },
+  "tool_usage": {
+    "web_search": {
+      "num_requests": 0
+    }
+  }
+}

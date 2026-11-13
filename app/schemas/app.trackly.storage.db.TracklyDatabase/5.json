@@ -1,0 +1,952 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 5,
+    "identityHash": "202f90145554c54f05156defb789d7fb",
+    "entities": [
+      {
+        "tableName": "consumption_versions",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`entry_id` TEXT NOT NULL, `version` INTEGER NOT NULL, `state` TEXT NOT NULL, `day` TEXT NOT NULL, `consumed_at` INTEGER NOT NULL, `moment` TEXT NOT NULL, `label` TEXT NOT NULL, `quantity_value` REAL, `quantity_unit` TEXT, `kcal` REAL NOT NULL, `protein_g` REAL, `carbs_g` REAL, `fat_g` REAL, `fiber_g` REAL, `product_id` TEXT, `recipe_id` TEXT, `source_type` TEXT, `source_description` TEXT, `source_url` TEXT, `confidence` TEXT, `assumptions` TEXT NOT NULL DEFAULT '[]', `kcal_low` REAL, `kcal_high` REAL, `origin` TEXT NOT NULL, `recorded_at` INTEGER NOT NULL, `action_id` INTEGER, PRIMARY KEY(`entry_id`, `version`))",
+        "fields": [
+          {
+            "fieldPath": "entryId",
+            "columnName": "entry_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "version",
+            "columnName": "version",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "state",
+            "columnName": "state",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "day",
+            "columnName": "day",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "consumedAt",
+            "columnName": "consumed_at",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "moment",
+            "columnName": "moment",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "label",
+            "columnName": "label",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "quantityValue",
+            "columnName": "quantity_value",
+            "affinity": "REAL"
+          },
+          {
+            "fieldPath": "quantityUnit",
+            "columnName": "quantity_unit",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "kcal",
+            "columnName": "kcal",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "proteinG",
+            "columnName": "protein_g",
+            "affinity": "REAL"
+          },
+          {
+            "fieldPath": "carbsG",
+            "columnName": "carbs_g",
+            "affinity": "REAL"
+          },
+          {
+            "fieldPath": "fatG",
+            "columnName": "fat_g",
+            "affinity": "REAL"
+          },
+          {
+            "fieldPath": "fiberG",
+            "columnName": "fiber_g",
+            "affinity": "REAL"
+          },
+          {
+            "fieldPath": "productId",
+            "columnName": "product_id",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "recipeId",
+            "columnName": "recipe_id",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "sourceType",
+            "columnName": "source_type",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "sourceDescription",
+            "columnName": "source_description",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "sourceUrl",
+            "columnName": "source_url",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "confidence",
+            "columnName": "confidence",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "assumptions",
+            "columnName": "assumptions",
+            "affinity": "TEXT",
+            "notNull": true,
+            "defaultValue": "'[]'"
+          },
+          {
+            "fieldPath": "kcalLow",
+            "columnName": "kcal_low",
+            "affinity": "REAL"
+          },
+          {
+            "fieldPath": "kcalHigh",
+            "columnName": "kcal_high",
+            "affinity": "REAL"
+          },
+          {
+            "fieldPath": "origin",
+            "columnName": "origin",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "recordedAt",
+            "columnName": "recorded_at",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "actionId",
+            "columnName": "action_id",
+            "affinity": "INTEGER"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "entry_id",
+            "version"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_consumption_versions_day",
+            "unique": false,
+            "columnNames": [
+              "day"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_consumption_versions_day` ON `${TABLE_NAME}` (`day`)"
+          },
+          {
+            "name": "index_consumption_versions_product_id",
+            "unique": false,
+            "columnNames": [
+              "product_id"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_consumption_versions_product_id` ON `${TABLE_NAME}` (`product_id`)"
+          }
+        ]
+      },
+      {
+        "tableName": "goal_versions",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`effective_from` TEXT NOT NULL, `version` INTEGER NOT NULL, `state` TEXT NOT NULL, `kcal` REAL NOT NULL, `protein_g` REAL, `carbs_g` REAL, `fat_g` REAL, `recorded_at` INTEGER NOT NULL, `action_id` INTEGER, PRIMARY KEY(`effective_from`, `version`))",
+        "fields": [
+          {
+            "fieldPath": "effectiveFrom",
+            "columnName": "effective_from",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "version",
+            "columnName": "version",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "state",
+            "columnName": "state",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "kcal",
+            "columnName": "kcal",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "proteinG",
+            "columnName": "protein_g",
+            "affinity": "REAL"
+          },
+          {
+            "fieldPath": "carbsG",
+            "columnName": "carbs_g",
+            "affinity": "REAL"
+          },
+          {
+            "fieldPath": "fatG",
+            "columnName": "fat_g",
+            "affinity": "REAL"
+          },
+          {
+            "fieldPath": "recordedAt",
+            "columnName": "recorded_at",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "actionId",
+            "columnName": "action_id",
+            "affinity": "INTEGER"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "effective_from",
+            "version"
+          ]
+        }
+      },
+      {
+        "tableName": "actions",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `type` TEXT NOT NULL, `title` TEXT NOT NULL, `applied_at` INTEGER NOT NULL, `undoes_action_id` INTEGER, `undone_by_action_id` INTEGER)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "type",
+            "columnName": "type",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "title",
+            "columnName": "title",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "appliedAt",
+            "columnName": "applied_at",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "undoesActionId",
+            "columnName": "undoes_action_id",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "undoneByActionId",
+            "columnName": "undone_by_action_id",
+            "affinity": "INTEGER"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "action_effects",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`action_id` INTEGER NOT NULL, `position` INTEGER NOT NULL, `kind` TEXT NOT NULL, `record_key` TEXT NOT NULL, `before_version` INTEGER, `after_version` INTEGER NOT NULL, PRIMARY KEY(`action_id`, `position`))",
+        "fields": [
+          {
+            "fieldPath": "actionId",
+            "columnName": "action_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "position",
+            "columnName": "position",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "kind",
+            "columnName": "kind",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "recordKey",
+            "columnName": "record_key",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "beforeVersion",
+            "columnName": "before_version",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "afterVersion",
+            "columnName": "after_version",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "action_id",
+            "position"
+          ]
+        }
+      },
+      {
+        "tableName": "chat_messages",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `created_at` INTEGER NOT NULL, `role` TEXT NOT NULL, `text` TEXT NOT NULL, `cards` TEXT NOT NULL DEFAULT '[]')",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createdAt",
+            "columnName": "created_at",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "role",
+            "columnName": "role",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "text",
+            "columnName": "text",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "cards",
+            "columnName": "cards",
+            "affinity": "TEXT",
+            "notNull": true,
+            "defaultValue": "'[]'"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "daily_estimate_versions",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`assessment_id` TEXT NOT NULL, `version` INTEGER NOT NULL, `state` TEXT NOT NULL, `day` TEXT NOT NULL, `kind` TEXT NOT NULL, `kcal` REAL, `kcal_low` REAL NOT NULL, `kcal_high` REAL, `description` TEXT NOT NULL, `replaces_entry_ids` TEXT NOT NULL, `recorded_at` INTEGER NOT NULL, `action_id` INTEGER, PRIMARY KEY(`assessment_id`, `version`))",
+        "fields": [
+          {
+            "fieldPath": "assessmentId",
+            "columnName": "assessment_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "version",
+            "columnName": "version",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "state",
+            "columnName": "state",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "day",
+            "columnName": "day",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "kind",
+            "columnName": "kind",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "kcal",
+            "columnName": "kcal",
+            "affinity": "REAL"
+          },
+          {
+            "fieldPath": "kcalLow",
+            "columnName": "kcal_low",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "kcalHigh",
+            "columnName": "kcal_high",
+            "affinity": "REAL"
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "description",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "replacesEntryIds",
+            "columnName": "replaces_entry_ids",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "recordedAt",
+            "columnName": "recorded_at",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "actionId",
+            "columnName": "action_id",
+            "affinity": "INTEGER"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "assessment_id",
+            "version"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_daily_estimate_versions_day",
+            "unique": false,
+            "columnNames": [
+              "day"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_daily_estimate_versions_day` ON `${TABLE_NAME}` (`day`)"
+          }
+        ]
+      },
+      {
+        "tableName": "day_tracking_versions",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`day` TEXT NOT NULL, `version` INTEGER NOT NULL, `state` TEXT NOT NULL, `closed_explicitly` INTEGER NOT NULL, `tracking_complete` INTEGER, `detailed_tracking_complete` INTEGER, `recorded_at` INTEGER NOT NULL, `action_id` INTEGER, PRIMARY KEY(`day`, `version`))",
+        "fields": [
+          {
+            "fieldPath": "day",
+            "columnName": "day",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "version",
+            "columnName": "version",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "state",
+            "columnName": "state",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "closedExplicitly",
+            "columnName": "closed_explicitly",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "trackingComplete",
+            "columnName": "tracking_complete",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "detailedTrackingComplete",
+            "columnName": "detailed_tracking_complete",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "recordedAt",
+            "columnName": "recorded_at",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "actionId",
+            "columnName": "action_id",
+            "affinity": "INTEGER"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "day",
+            "version"
+          ]
+        }
+      },
+      {
+        "tableName": "product_versions",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`product_id` TEXT NOT NULL, `version` INTEGER NOT NULL, `state` TEXT NOT NULL, `name` TEXT NOT NULL, `brand` TEXT, `variant` TEXT, `country` TEXT, `barcode` TEXT, `aliases` TEXT NOT NULL, `sold_state` TEXT, `kcal` REAL, `protein_g` REAL, `carbs_g` REAL, `fat_g` REAL, `fiber_g` REAL, `basis_value` REAL, `basis_unit` TEXT, `basis_state` TEXT, `nutrition_status` TEXT, `source_type` TEXT, `source_description` TEXT, `source_url` TEXT, `confidence` TEXT, `verified` INTEGER NOT NULL, `favorite` INTEGER NOT NULL, `active` INTEGER NOT NULL, `redirect_to` TEXT, `default_match` INTEGER NOT NULL, `kind` TEXT NOT NULL DEFAULT 'recurring', `portion_label` TEXT, `portion_weight_value` REAL, `portion_weight_unit` TEXT, `portion_kcal` REAL, `portion_protein_g` REAL, `portion_carbs_g` REAL, `portion_fat_g` REAL, `portion_fiber_g` REAL, `recorded_at` INTEGER NOT NULL, `action_id` INTEGER, PRIMARY KEY(`product_id`, `version`))",
+        "fields": [
+          {
+            "fieldPath": "productId",
+            "columnName": "product_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "version",
+            "columnName": "version",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "state",
+            "columnName": "state",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "brand",
+            "columnName": "brand",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "variant",
+            "columnName": "variant",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "country",
+            "columnName": "country",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "barcode",
+            "columnName": "barcode",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "aliases",
+            "columnName": "aliases",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "soldState",
+            "columnName": "sold_state",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "kcal",
+            "columnName": "kcal",
+            "affinity": "REAL"
+          },
+          {
+            "fieldPath": "proteinG",
+            "columnName": "protein_g",
+            "affinity": "REAL"
+          },
+          {
+            "fieldPath": "carbsG",
+            "columnName": "carbs_g",
+            "affinity": "REAL"
+          },
+          {
+            "fieldPath": "fatG",
+            "columnName": "fat_g",
+            "affinity": "REAL"
+          },
+          {
+            "fieldPath": "fiberG",
+            "columnName": "fiber_g",
+            "affinity": "REAL"
+          },
+          {
+            "fieldPath": "basisValue",
+            "columnName": "basis_value",
+            "affinity": "REAL"
+          },
+          {
+            "fieldPath": "basisUnit",
+            "columnName": "basis_unit",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "basisState",
+            "columnName": "basis_state",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "nutritionStatus",
+            "columnName": "nutrition_status",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "sourceType",
+            "columnName": "source_type",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "sourceDescription",
+            "columnName": "source_description",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "sourceUrl",
+            "columnName": "source_url",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "confidence",
+            "columnName": "confidence",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "verified",
+            "columnName": "verified",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "favorite",
+            "columnName": "favorite",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "active",
+            "columnName": "active",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "redirectTo",
+            "columnName": "redirect_to",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "defaultMatch",
+            "columnName": "default_match",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "kind",
+            "columnName": "kind",
+            "affinity": "TEXT",
+            "notNull": true,
+            "defaultValue": "'recurring'"
+          },
+          {
+            "fieldPath": "portionLabel",
+            "columnName": "portion_label",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "portionWeightValue",
+            "columnName": "portion_weight_value",
+            "affinity": "REAL"
+          },
+          {
+            "fieldPath": "portionWeightUnit",
+            "columnName": "portion_weight_unit",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "portionKcal",
+            "columnName": "portion_kcal",
+            "affinity": "REAL"
+          },
+          {
+            "fieldPath": "portionProteinG",
+            "columnName": "portion_protein_g",
+            "affinity": "REAL"
+          },
+          {
+            "fieldPath": "portionCarbsG",
+            "columnName": "portion_carbs_g",
+            "affinity": "REAL"
+          },
+          {
+            "fieldPath": "portionFatG",
+            "columnName": "portion_fat_g",
+            "affinity": "REAL"
+          },
+          {
+            "fieldPath": "portionFiberG",
+            "columnName": "portion_fiber_g",
+            "affinity": "REAL"
+          },
+          {
+            "fieldPath": "recordedAt",
+            "columnName": "recorded_at",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "actionId",
+            "columnName": "action_id",
+            "affinity": "INTEGER"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "product_id",
+            "version"
+          ]
+        }
+      },
+      {
+        "tableName": "recipe_versions",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`recipe_id` TEXT NOT NULL, `version` INTEGER NOT NULL, `state` TEXT NOT NULL, `name` TEXT NOT NULL, `aliases` TEXT NOT NULL, `active` INTEGER NOT NULL, `default_match` INTEGER NOT NULL, `ingredients` TEXT NOT NULL, `source_template` TEXT, `recorded_at` INTEGER NOT NULL, `action_id` INTEGER, PRIMARY KEY(`recipe_id`, `version`))",
+        "fields": [
+          {
+            "fieldPath": "recipeId",
+            "columnName": "recipe_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "version",
+            "columnName": "version",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "state",
+            "columnName": "state",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "aliases",
+            "columnName": "aliases",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "active",
+            "columnName": "active",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "defaultMatch",
+            "columnName": "default_match",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ingredients",
+            "columnName": "ingredients",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sourceTemplate",
+            "columnName": "source_template",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "recordedAt",
+            "columnName": "recorded_at",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "actionId",
+            "columnName": "action_id",
+            "affinity": "INTEGER"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "recipe_id",
+            "version"
+          ]
+        }
+      },
+      {
+        "tableName": "preference_versions",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`preference_id` TEXT NOT NULL, `version` INTEGER NOT NULL, `state` TEXT NOT NULL, `kind` TEXT NOT NULL, `trigger` TEXT NOT NULL, `rule` TEXT NOT NULL, `active` INTEGER NOT NULL, `recorded_at` INTEGER NOT NULL, `action_id` INTEGER, PRIMARY KEY(`preference_id`, `version`))",
+        "fields": [
+          {
+            "fieldPath": "preferenceId",
+            "columnName": "preference_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "version",
+            "columnName": "version",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "state",
+            "columnName": "state",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "kind",
+            "columnName": "kind",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "trigger",
+            "columnName": "trigger",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "rule",
+            "columnName": "rule",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "active",
+            "columnName": "active",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "recordedAt",
+            "columnName": "recorded_at",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "actionId",
+            "columnName": "action_id",
+            "affinity": "INTEGER"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "preference_id",
+            "version"
+          ]
+        }
+      },
+      {
+        "tableName": "imported_sources",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`kind` TEXT NOT NULL, `record_key` TEXT NOT NULL, `version` INTEGER NOT NULL, `sha256` TEXT NOT NULL, `json` TEXT NOT NULL, `action_id` INTEGER NOT NULL, PRIMARY KEY(`kind`, `record_key`, `version`))",
+        "fields": [
+          {
+            "fieldPath": "kind",
+            "columnName": "kind",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "recordKey",
+            "columnName": "record_key",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "version",
+            "columnName": "version",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sha256",
+            "columnName": "sha256",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "json",
+            "columnName": "json",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "actionId",
+            "columnName": "action_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "kind",
+            "record_key",
+            "version"
+          ]
+        }
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '202f90145554c54f05156defb789d7fb')"
+    ]
+  }
+}

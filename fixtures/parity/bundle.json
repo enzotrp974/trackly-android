@@ -1,0 +1,1366 @@
+{
+  "checks": {
+    "days": {
+      "2026-09-01": {
+        "energy_status": "complete",
+        "targets": {
+          "carbs_g": 352.15,
+          "fat_g": 66.6,
+          "fiber_bonus_g": 36.4,
+          "kcal": 2600.0,
+          "protein_ideal_g": 148.0,
+          "protein_min_g": 118.4
+        },
+        "totals": {
+          "carbs_g": 250.05,
+          "contains_estimates": true,
+          "energy_status": "detailed",
+          "fat_g": 64.3,
+          "fiber_g": 14.0,
+          "fiber_status": "bonus",
+          "kcal": 2101.5,
+          "kcal_high": 2251.5,
+          "kcal_low": 2001.5,
+          "known_totals": {
+            "carbs_g": 250.05,
+            "fat_g": 64.3,
+            "fiber_g": 14.0,
+            "kcal": 2101.5,
+            "protein_g": 108.2
+          },
+          "protein_g": 108.2
+        }
+      },
+      "2026-09-02": {
+        "energy_status": "partial",
+        "targets": {
+          "carbs_g": 352.15,
+          "fat_g": 66.6,
+          "fiber_bonus_g": 36.4,
+          "kcal": 2600.0,
+          "protein_ideal_g": 148.0,
+          "protein_min_g": 118.4
+        },
+        "totals": {
+          "carbs_g": 51.05,
+          "contains_estimates": false,
+          "energy_status": "detailed",
+          "fat_g": null,
+          "fiber_g": null,
+          "fiber_status": "bonus_unknown",
+          "kcal": 391.75,
+          "kcal_high": 391.75,
+          "kcal_low": 391.75,
+          "known_totals": {
+            "carbs_g": 51.05,
+            "fat_g": 8.35,
+            "fiber_g": 6.6,
+            "kcal": 391.75,
+            "protein_g": 15.7
+          },
+          "protein_g": 15.7
+        }
+      },
+      "2026-09-03": {
+        "energy_status": "estimated",
+        "targets": {
+          "carbs_g": 352.15,
+          "fat_g": 66.6,
+          "fiber_bonus_g": 36.4,
+          "kcal": 2600.0,
+          "protein_ideal_g": 148.0,
+          "protein_min_g": 118.4
+        },
+        "totals": {
+          "carbs_g": null,
+          "contains_estimates": true,
+          "energy_status": "estimate",
+          "fat_g": null,
+          "fiber_g": null,
+          "fiber_status": "bonus_unknown",
+          "kcal": 2600,
+          "kcal_high": 2800,
+          "kcal_low": 2400,
+          "known_totals": {
+            "carbs_g": 58.0,
+            "fat_g": 4.0,
+            "fiber_g": 3.0,
+            "kcal": 300.0,
+            "protein_g": 8.0
+          },
+          "protein_g": null
+        }
+      },
+      "2026-09-04": {
+        "energy_status": "bounded",
+        "targets": {
+          "carbs_g": 296.59,
+          "fat_g": 61.62,
+          "fiber_bonus_g": 32.9,
+          "kcal": 2350.0,
+          "kcal_limit": 2450.0,
+          "protein_ideal_g": 152.25,
+          "protein_min_g": 123.25
+        },
+        "totals": {
+          "carbs_g": null,
+          "contains_estimates": true,
+          "energy_status": "lower_bound",
+          "fat_g": null,
+          "fiber_g": null,
+          "fiber_status": "bonus_unknown",
+          "kcal": null,
+          "kcal_high": null,
+          "kcal_low": 1550.0,
+          "known_totals": {
+            "carbs_g": 165.0,
+            "fat_g": 62.0,
+            "fiber_g": 6.0,
+            "kcal": 1650.0,
+            "protein_g": 64.0
+          },
+          "protein_g": null
+        }
+      },
+      "2026-09-05": {
+        "energy_status": "partial",
+        "targets": {
+          "carbs_g": 296.59,
+          "fat_g": 61.62,
+          "fiber_bonus_g": 32.9,
+          "kcal": 2350.0,
+          "kcal_limit": 2450.0,
+          "protein_ideal_g": 152.25,
+          "protein_min_g": 123.25
+        },
+        "totals": {
+          "carbs_g": null,
+          "contains_estimates": false,
+          "energy_status": "unknown",
+          "fat_g": null,
+          "fiber_g": null,
+          "fiber_status": "bonus_unknown",
+          "kcal": null,
+          "kcal_high": null,
+          "kcal_low": 950.0,
+          "known_totals": {
+            "carbs_g": 140.0,
+            "fat_g": 22.0,
+            "fiber_g": 11.0,
+            "kcal": 950.0,
+            "protein_g": 40.0
+          },
+          "protein_g": null
+        }
+      },
+      "2026-09-06": {
+        "energy_status": "complete",
+        "targets": {
+          "carbs_g": 296.59,
+          "fat_g": 61.62,
+          "fiber_bonus_g": 32.9,
+          "kcal": 2350.0,
+          "kcal_limit": 2450.0,
+          "protein_ideal_g": 152.25,
+          "protein_min_g": 123.25
+        },
+        "totals": {
+          "carbs_g": 95.0,
+          "contains_estimates": false,
+          "energy_status": "detailed",
+          "fat_g": 80.0,
+          "fiber_g": 9.0,
+          "fiber_status": "bonus",
+          "kcal": 1500.0,
+          "kcal_high": 1500.0,
+          "kcal_low": 1500.0,
+          "known_totals": {
+            "carbs_g": 95.0,
+            "fat_g": 80.0,
+            "fiber_g": 9.0,
+            "kcal": 1500.0,
+            "protein_g": 90.0
+          },
+          "protein_g": 90.0
+        }
+      },
+      "2026-09-07": {
+        "energy_status": "complete",
+        "targets": {
+          "carbs_g": 296.59,
+          "fat_g": 61.62,
+          "fiber_bonus_g": 32.9,
+          "kcal": 2350.0,
+          "kcal_limit": 2450.0,
+          "protein_ideal_g": 152.25,
+          "protein_min_g": 123.25
+        },
+        "totals": {
+          "carbs_g": 0.0,
+          "contains_estimates": false,
+          "energy_status": "detailed",
+          "fat_g": 0.0,
+          "fiber_g": 0.0,
+          "fiber_status": "bonus",
+          "kcal": 0.0,
+          "kcal_high": 0.0,
+          "kcal_low": 0.0,
+          "known_totals": {
+            "carbs_g": 0.0,
+            "fat_g": 0.0,
+            "fiber_g": 0.0,
+            "kcal": 0.0,
+            "protein_g": 0.0
+          },
+          "protein_g": 0.0
+        }
+      },
+      "2026-09-08": {
+        "energy_status": "partial",
+        "targets": {
+          "carbs_g": 296.59,
+          "fat_g": 61.62,
+          "fiber_bonus_g": 32.9,
+          "kcal": 2350.0,
+          "kcal_limit": 2450.0,
+          "protein_ideal_g": 152.25,
+          "protein_min_g": 123.25
+        },
+        "totals": {
+          "carbs_g": 18.5,
+          "contains_estimates": false,
+          "energy_status": "detailed",
+          "fat_g": 0.3,
+          "fiber_g": 3.6,
+          "fiber_status": "bonus",
+          "kcal": 78.0,
+          "kcal_high": 78.0,
+          "kcal_low": 78.0,
+          "known_totals": {
+            "carbs_g": 18.5,
+            "fat_g": 0.3,
+            "fiber_g": 3.6,
+            "kcal": 78.0,
+            "protein_g": 0.4
+          },
+          "protein_g": 0.4
+        }
+      }
+    },
+    "engine": "suivi_kcal"
+  },
+  "files": {
+    "catalogue.json": {
+      "products": [
+        {
+          "active": true,
+          "aliases": [
+            "yaourt"
+          ],
+          "barcode": null,
+          "brand": null,
+          "confidence": "medium",
+          "counted_entry_ids": [
+            "00000000-0000-4000-8000-000000000104",
+            "00000000-0000-4000-8000-000000000201"
+          ],
+          "country": null,
+          "favorite": true,
+          "last_portion": {
+            "unit": "g",
+            "value": 150
+          },
+          "last_used_at": "2026-09-02T08:05:00+02:00",
+          "name": "Yaourt nature",
+          "nutrition_basis": {
+            "unit": "g",
+            "value": 100
+          },
+          "nutrition_per_100": {
+            "carbs_g": 4.7,
+            "fat_g": 2.2,
+            "fiber_g": 0,
+            "kcal": 61,
+            "protein_g": 4.8
+          },
+          "nutrition_status": "complete",
+          "product_id": "yaourt-nature-essai",
+          "sold_state": "as_sold",
+          "source": {
+            "description": "Valeurs génériques inventées pour le test",
+            "type": "generic_estimate"
+          },
+          "use_count": 2,
+          "usual_portions": [
+            {
+              "unit": "g",
+              "value": 150
+            }
+          ],
+          "verified": false
+        },
+        {
+          "active": true,
+          "aliases": [
+            "barre"
+          ],
+          "barcode": null,
+          "brand": "Marque générique",
+          "confidence": "medium",
+          "counted_entry_ids": [],
+          "country": null,
+          "favorite": false,
+          "last_portion": null,
+          "last_used_at": null,
+          "name": "Barre de céréales",
+          "nutrition_basis": {
+            "unit": "g",
+            "value": 100
+          },
+          "nutrition_per_100": {
+            "carbs_g": 62,
+            "fat_g": null,
+            "fiber_g": null,
+            "kcal": 400,
+            "protein_g": 8
+          },
+          "nutrition_status": "partial",
+          "product_id": "barre-cereales-essai",
+          "sold_state": "as_sold",
+          "source": {
+            "description": "Valeurs génériques inventées pour le test",
+            "type": "generic_estimate"
+          },
+          "use_count": 0,
+          "usual_portions": [],
+          "verified": false
+        },
+        {
+          "active": false,
+          "barcode": null,
+          "brand": null,
+          "confidence": "medium",
+          "counted_entry_ids": [],
+          "country": null,
+          "favorite": false,
+          "last_portion": null,
+          "last_used_at": null,
+          "name": "Riz blanc cuit",
+          "nutrition_basis": {
+            "state": "cuit",
+            "unit": "g",
+            "value": 100
+          },
+          "nutrition_per_100": {
+            "carbs_g": 28,
+            "fat_g": 0.3,
+            "fiber_g": 0.4,
+            "kcal": 130,
+            "protein_g": 2.7
+          },
+          "product_id": "riz-cuit-essai",
+          "sold_state": null,
+          "source": {
+            "description": "Valeurs génériques inventées pour le test",
+            "type": "generic_estimate"
+          },
+          "use_count": 0,
+          "usual_portions": [],
+          "verified": false
+        }
+      ],
+      "schema_version": 1
+    },
+    "journal/2026-09-01.json": {
+      "closed_explicitly": false,
+      "day": "2026-09-01",
+      "events": [
+        {
+          "category": "breakfast",
+          "confidence": "medium",
+          "consumed_at": "2026-09-01T07:45:00+02:00",
+          "created_at": "2026-09-01T07:45:00+02:00",
+          "day": "2026-09-01",
+          "entry_id": "00000000-0000-4000-8000-000000000101",
+          "estimate": null,
+          "label": "Porridge",
+          "nutrition": {
+            "carbs_g": 58,
+            "fat_g": 10,
+            "fiber_g": 6,
+            "kcal": 410,
+            "protein_g": 18
+          },
+          "origin": "chatgpt_mobile",
+          "product_id": null,
+          "quantity": {
+            "unit": "portion",
+            "value": 1
+          },
+          "recipe_id": "porridge-essai",
+          "source": {
+            "description": "Estimation générique inventée",
+            "type": "generic_estimate"
+          },
+          "state": "active",
+          "updated_at": "2026-09-01T07:45:30+02:00",
+          "version": 1
+        },
+        {
+          "category": "lunch",
+          "confidence": "medium",
+          "consumed_at": "2026-09-01T12:30:00+02:00",
+          "created_at": "2026-09-01T12:30:00+02:00",
+          "day": "2026-09-01",
+          "entry_id": "00000000-0000-4000-8000-000000000102",
+          "estimate": null,
+          "label": "Riz et poulet",
+          "nutrition": {
+            "carbs_g": 80,
+            "fat_g": 12,
+            "fiber_g": 3,
+            "kcal": 650,
+            "protein_g": 45
+          },
+          "origin": "chatgpt_mobile",
+          "product_id": "riz-cuit-essai",
+          "quantity": {
+            "unit": "portion",
+            "value": 1
+          },
+          "recipe_id": null,
+          "source": {
+            "description": "Estimation générique inventée",
+            "type": "generic_estimate"
+          },
+          "state": "active",
+          "updated_at": "2026-09-01T12:30:30+02:00",
+          "version": 1
+        },
+        {
+          "category": "lunch",
+          "confidence": "medium",
+          "consumed_at": "2026-09-01T12:30:00+02:00",
+          "created_at": "2026-09-01T12:30:00+02:00",
+          "day": "2026-09-01",
+          "entry_id": "00000000-0000-4000-8000-000000000102",
+          "estimate": null,
+          "label": "Riz et poulet",
+          "nutrition": {
+            "carbs_g": 85,
+            "fat_g": 13,
+            "fiber_g": 3,
+            "kcal": 700,
+            "protein_g": 48
+          },
+          "origin": "chatgpt_mobile",
+          "product_id": "riz-cuit-essai",
+          "quantity": {
+            "unit": "portion",
+            "value": 1
+          },
+          "recipe_id": null,
+          "source": {
+            "description": "Estimation générique inventée",
+            "type": "generic_estimate"
+          },
+          "state": "active",
+          "updated_at": "2026-09-01T21:02:00+02:00",
+          "version": 2
+        },
+        {
+          "category": "dinner",
+          "confidence": "medium",
+          "consumed_at": "2026-09-01T19:40:00+02:00",
+          "created_at": "2026-09-01T19:40:00+02:00",
+          "day": "2026-09-01",
+          "entry_id": "00000000-0000-4000-8000-000000000103",
+          "estimate": {
+            "assumptions": [
+              "pizza moyenne, pâte fine"
+            ],
+            "kcal_high": 1050,
+            "kcal_low": 800
+          },
+          "label": "Pizza au restaurant",
+          "nutrition": {
+            "carbs_g": 100,
+            "fat_g": 38,
+            "fiber_g": 5,
+            "kcal": 900,
+            "protein_g": 35
+          },
+          "origin": "chatgpt_mobile",
+          "product_id": null,
+          "quantity": {
+            "unit": "portion",
+            "value": 1
+          },
+          "recipe_id": null,
+          "source": {
+            "description": "Estimation générique inventée",
+            "type": "restaurant_estimate"
+          },
+          "state": "active",
+          "updated_at": "2026-09-01T19:40:30+02:00",
+          "version": 1
+        },
+        {
+          "category": "snack",
+          "confidence": "medium",
+          "consumed_at": "2026-09-01T16:10:00+02:00",
+          "created_at": "2026-09-01T16:10:00+02:00",
+          "day": "2026-09-01",
+          "entry_id": "00000000-0000-4000-8000-000000000104",
+          "estimate": null,
+          "label": "Yaourt nature",
+          "nutrition": {
+            "carbs_g": 7.05,
+            "fat_g": 3.3,
+            "fiber_g": 0,
+            "kcal": 91.5,
+            "protein_g": 7.2
+          },
+          "origin": "chatgpt_mobile",
+          "product_id": "yaourt-nature-essai",
+          "quantity": {
+            "unit": "g",
+            "value": 150
+          },
+          "recipe_id": null,
+          "source": {
+            "description": "Estimation générique inventée",
+            "type": "catalogue"
+          },
+          "state": "active",
+          "updated_at": "2026-09-01T16:10:30+02:00",
+          "version": 1
+        }
+      ],
+      "imported_snapshots": [],
+      "schema_version": 1,
+      "timezone": "Europe/Zurich",
+      "updated_at": "2026-09-01T23:00:00+02:00"
+    },
+    "journal/2026-09-02.json": {
+      "closed_explicitly": false,
+      "daily_estimates": [],
+      "day": "2026-09-02",
+      "events": [
+        {
+          "category": "breakfast",
+          "confidence": "medium",
+          "consumed_at": "2026-09-02T08:05:00+02:00",
+          "created_at": "2026-09-02T08:05:00+02:00",
+          "day": "2026-09-02",
+          "entry_id": "00000000-0000-4000-8000-000000000201",
+          "estimate": null,
+          "label": "Yaourt nature",
+          "nutrition": {
+            "carbs_g": 7.05,
+            "fat_g": 3.3,
+            "fiber_g": 0,
+            "kcal": 91.5,
+            "protein_g": 7.2
+          },
+          "origin": "chatgpt_mobile",
+          "product_id": "yaourt-nature-essai",
+          "quantity": {
+            "unit": "g",
+            "value": 150
+          },
+          "recipe_id": null,
+          "source": {
+            "description": "Estimation générique inventée",
+            "type": "generic_estimate"
+          },
+          "state": "active",
+          "updated_at": "2026-09-02T08:05:30+02:00",
+          "version": 1
+        },
+        {
+          "category": "snack",
+          "confidence": "medium",
+          "consumed_at": "2026-09-02T10:30:00+02:00",
+          "created_at": "2026-09-02T10:30:00+02:00",
+          "day": "2026-09-02",
+          "entry_id": "00000000-0000-4000-8000-000000000202",
+          "estimate": null,
+          "label": "Barre de céréales",
+          "nutrition": {
+            "carbs_g": 18.6,
+            "fat_g": null,
+            "fiber_g": null,
+            "kcal": 120,
+            "protein_g": 2.4
+          },
+          "origin": "chatgpt_mobile",
+          "product_id": "barre-cereales-essai",
+          "quantity": {
+            "unit": "g",
+            "value": 30
+          },
+          "recipe_id": null,
+          "source": {
+            "description": "Estimation générique inventée",
+            "type": "catalogue_partial"
+          },
+          "state": "active",
+          "updated_at": "2026-09-02T10:30:30+02:00",
+          "version": 1
+        },
+        {
+          "category": "lunch",
+          "confidence": "medium",
+          "consumed_at": "2026-09-02T12:15:00+02:00",
+          "created_at": "2026-09-02T12:15:00+02:00",
+          "day": "2026-09-02",
+          "entry_id": "00000000-0000-4000-8000-000000000203",
+          "estimate": null,
+          "label": "Sandwich jambon",
+          "nutrition": {
+            "carbs_g": 55,
+            "fat_g": 21,
+            "fiber_g": 3,
+            "kcal": 520,
+            "protein_g": 24
+          },
+          "origin": "chatgpt_mobile",
+          "product_id": null,
+          "quantity": {
+            "unit": "portion",
+            "value": 1
+          },
+          "recipe_id": null,
+          "source": {
+            "description": "Estimation générique inventée",
+            "type": "generic_estimate"
+          },
+          "state": "active",
+          "updated_at": "2026-09-02T12:15:30+02:00",
+          "version": 1
+        },
+        {
+          "category": "lunch",
+          "confidence": "medium",
+          "consumed_at": "2026-09-02T12:15:00+02:00",
+          "created_at": "2026-09-02T12:15:00+02:00",
+          "day": "2026-09-02",
+          "entry_id": "00000000-0000-4000-8000-000000000203",
+          "estimate": null,
+          "label": "Sandwich jambon",
+          "nutrition": {
+            "carbs_g": 55,
+            "fat_g": 21,
+            "fiber_g": 3,
+            "kcal": 520,
+            "protein_g": 24
+          },
+          "origin": "chatgpt_mobile",
+          "product_id": null,
+          "quantity": {
+            "unit": "portion",
+            "value": 1
+          },
+          "recipe_id": null,
+          "source": {
+            "description": "Estimation générique inventée",
+            "type": "generic_estimate"
+          },
+          "state": "deleted",
+          "updated_at": "2026-09-02T21:02:00+02:00",
+          "version": 2
+        },
+        {
+          "category": "dinner",
+          "confidence": "medium",
+          "consumed_at": "2026-09-02T19:20:00+02:00",
+          "created_at": "2026-09-02T19:20:00+02:00",
+          "day": "2026-09-02",
+          "entry_id": "00000000-0000-4000-8000-000000000204",
+          "estimate": null,
+          "label": "Soupe de légumes",
+          "nutrition": {
+            "carbs_g": 25.4,
+            "fat_g": 5.05,
+            "fiber_g": 6.6,
+            "kcal": 180.25,
+            "protein_g": 6.1
+          },
+          "origin": "chatgpt_mobile",
+          "product_id": null,
+          "quantity": {
+            "unit": "portion",
+            "value": 1
+          },
+          "recipe_id": null,
+          "source": {
+            "description": "Estimation générique inventée",
+            "type": "generic_estimate"
+          },
+          "state": "active",
+          "updated_at": "2026-09-02T19:20:30+02:00",
+          "version": 1
+        }
+      ],
+      "imported_snapshots": [],
+      "schema_version": 2,
+      "timezone": "Europe/Zurich",
+      "tracking_complete": false,
+      "updated_at": "2026-09-02T23:00:00+02:00"
+    },
+    "journal/2026-09-03.json": {
+      "closed_explicitly": false,
+      "daily_estimates": [
+        {
+          "assessment_id": "00000000-0000-4000-8000-000000000031",
+          "created_at": "2026-09-03T22:00:00+02:00",
+          "day": "2026-09-03",
+          "kcal": 2500,
+          "kcal_high": 2700,
+          "kcal_low": 2300,
+          "kind": "estimate",
+          "replaces_entry_ids": [
+            "00000000-0000-4000-8000-000000000301"
+          ],
+          "source": {
+            "description": "Estimation globale validée (essai)",
+            "type": "user_estimate"
+          },
+          "state": "active",
+          "updated_at": "2026-09-03T22:01:00+02:00",
+          "user_confirmed": true,
+          "version": 1
+        },
+        {
+          "assessment_id": "00000000-0000-4000-8000-000000000031",
+          "created_at": "2026-09-03T22:00:00+02:00",
+          "day": "2026-09-03",
+          "kcal": 2600,
+          "kcal_high": 2800,
+          "kcal_low": 2400,
+          "kind": "estimate",
+          "replaces_entry_ids": [
+            "00000000-0000-4000-8000-000000000301"
+          ],
+          "source": {
+            "description": "Estimation globale validée (essai)",
+            "type": "user_estimate"
+          },
+          "state": "active",
+          "updated_at": "2026-09-03T22:02:00+02:00",
+          "user_confirmed": true,
+          "version": 2
+        }
+      ],
+      "day": "2026-09-03",
+      "events": [
+        {
+          "category": "dinner",
+          "confidence": "medium",
+          "consumed_at": "2026-09-03T21:00:00+02:00",
+          "created_at": "2026-09-03T21:00:00+02:00",
+          "day": "2026-09-03",
+          "entry_id": "00000000-0000-4000-8000-000000000301",
+          "estimate": null,
+          "label": "Total de la journée (ancien agrégat)",
+          "nutrition": {
+            "carbs_g": 220,
+            "fat_g": 70,
+            "fiber_g": 20,
+            "kcal": 2000,
+            "protein_g": 90
+          },
+          "origin": "chatgpt_mobile",
+          "product_id": null,
+          "quantity": {
+            "unit": "portion",
+            "value": 1
+          },
+          "recipe_id": null,
+          "source": {
+            "description": "Estimation générique inventée",
+            "type": "generic_estimate"
+          },
+          "state": "active",
+          "updated_at": "2026-09-03T21:00:30+02:00",
+          "version": 1
+        },
+        {
+          "category": "breakfast",
+          "confidence": "medium",
+          "consumed_at": "2026-09-03T07:30:00+02:00",
+          "created_at": "2026-09-03T07:30:00+02:00",
+          "day": "2026-09-03",
+          "entry_id": "00000000-0000-4000-8000-000000000302",
+          "estimate": null,
+          "label": "Pain et confiture",
+          "nutrition": {
+            "carbs_g": 58,
+            "fat_g": 4,
+            "fiber_g": 3,
+            "kcal": 300,
+            "protein_g": 8
+          },
+          "origin": "chatgpt_mobile",
+          "product_id": null,
+          "quantity": {
+            "unit": "portion",
+            "value": 1
+          },
+          "recipe_id": null,
+          "source": {
+            "description": "Estimation générique inventée",
+            "type": "generic_estimate"
+          },
+          "state": "active",
+          "updated_at": "2026-09-03T07:30:30+02:00",
+          "version": 1
+        }
+      ],
+      "imported_snapshots": [],
+      "schema_version": 2,
+      "timezone": "Europe/Zurich",
+      "updated_at": "2026-09-03T23:00:00+02:00"
+    },
+    "journal/2026-09-04.json": {
+      "closed_explicitly": false,
+      "daily_estimates": [
+        {
+          "assessment_id": "00000000-0000-4000-8000-000000000041",
+          "created_at": "2026-09-04T22:00:00+02:00",
+          "day": "2026-09-04",
+          "kcal": null,
+          "kcal_high": null,
+          "kcal_low": 1500,
+          "kind": "lower_bound",
+          "replaces_entry_ids": [],
+          "source": {
+            "description": "Estimation globale validée (essai)",
+            "type": "user_estimate"
+          },
+          "state": "active",
+          "updated_at": "2026-09-04T22:01:00+02:00",
+          "user_confirmed": true,
+          "version": 1
+        }
+      ],
+      "day": "2026-09-04",
+      "events": [
+        {
+          "category": "lunch",
+          "confidence": "medium",
+          "consumed_at": "2026-09-04T12:40:00+02:00",
+          "created_at": "2026-09-04T12:40:00+02:00",
+          "day": "2026-09-04",
+          "entry_id": "00000000-0000-4000-8000-000000000401",
+          "estimate": {
+            "assumptions": [
+              "burger double",
+              "frites moyennes"
+            ],
+            "kcal_high": 1350,
+            "kcal_low": 1100
+          },
+          "label": "Burger au restaurant",
+          "nutrition": {
+            "carbs_g": 95,
+            "fat_g": 62,
+            "fiber_g": 6,
+            "kcal": 1200,
+            "protein_g": 55
+          },
+          "origin": "chatgpt_mobile",
+          "product_id": null,
+          "quantity": {
+            "unit": "portion",
+            "value": 1
+          },
+          "recipe_id": null,
+          "source": {
+            "description": "Estimation générique inventée",
+            "type": "restaurant_estimate"
+          },
+          "state": "active",
+          "updated_at": "2026-09-04T12:40:30+02:00",
+          "version": 1
+        },
+        {
+          "category": "snack",
+          "confidence": "medium",
+          "consumed_at": "2026-09-04T16:00:00+02:00",
+          "created_at": "2026-09-04T16:00:00+02:00",
+          "day": "2026-09-04",
+          "entry_id": "00000000-0000-4000-8000-000000000402",
+          "estimate": null,
+          "label": "Barre de céréales",
+          "nutrition": {
+            "carbs_g": 70,
+            "fat_g": null,
+            "fiber_g": null,
+            "kcal": 450,
+            "protein_g": 9
+          },
+          "origin": "chatgpt_mobile",
+          "product_id": "barre-cereales-essai",
+          "quantity": {
+            "unit": "portion",
+            "value": 1
+          },
+          "recipe_id": null,
+          "source": {
+            "description": "Estimation générique inventée",
+            "type": "generic_estimate"
+          },
+          "state": "active",
+          "updated_at": "2026-09-04T16:00:30+02:00",
+          "version": 1
+        }
+      ],
+      "imported_snapshots": [],
+      "schema_version": 2,
+      "timezone": "Europe/Zurich",
+      "updated_at": "2026-09-04T23:00:00+02:00"
+    },
+    "journal/2026-09-05.json": {
+      "closed_explicitly": false,
+      "daily_estimates": [
+        {
+          "assessment_id": "00000000-0000-4000-8000-000000000051",
+          "created_at": "2026-09-05T22:00:00+02:00",
+          "day": "2026-09-05",
+          "kcal": 2200,
+          "kcal_high": 2400,
+          "kcal_low": 2000,
+          "kind": "estimate",
+          "replaces_entry_ids": [],
+          "source": {
+            "description": "Estimation globale validée (essai)",
+            "type": "user_estimate"
+          },
+          "state": "active",
+          "updated_at": "2026-09-05T22:01:00+02:00",
+          "user_confirmed": true,
+          "version": 1
+        },
+        {
+          "assessment_id": "00000000-0000-4000-8000-000000000051",
+          "created_at": "2026-09-05T22:00:00+02:00",
+          "day": "2026-09-05",
+          "kcal": 2200,
+          "kcal_high": 2400,
+          "kcal_low": 2000,
+          "kind": "estimate",
+          "replaces_entry_ids": [],
+          "source": {
+            "description": "Estimation globale validée (essai)",
+            "type": "user_estimate"
+          },
+          "state": "deleted",
+          "updated_at": "2026-09-05T22:02:00+02:00",
+          "user_confirmed": true,
+          "version": 2
+        }
+      ],
+      "day": "2026-09-05",
+      "events": [
+        {
+          "category": "breakfast",
+          "confidence": "medium",
+          "consumed_at": "2026-09-05T08:00:00+02:00",
+          "created_at": "2026-09-05T08:00:00+02:00",
+          "day": "2026-09-05",
+          "entry_id": "00000000-0000-4000-8000-000000000501",
+          "estimate": null,
+          "label": "Œufs et pain",
+          "nutrition": {
+            "carbs_g": 40,
+            "fat_g": 10,
+            "fiber_g": 4,
+            "kcal": 350,
+            "protein_g": 20
+          },
+          "origin": "chatgpt_mobile",
+          "product_id": null,
+          "quantity": {
+            "unit": "portion",
+            "value": 1
+          },
+          "recipe_id": null,
+          "source": {
+            "description": "Estimation générique inventée",
+            "type": "generic_estimate"
+          },
+          "state": "active",
+          "updated_at": "2026-09-05T08:00:30+02:00",
+          "version": 1
+        },
+        {
+          "category": "dinner",
+          "confidence": "medium",
+          "consumed_at": "2026-09-05T20:00:00+02:00",
+          "created_at": "2026-09-05T20:00:00+02:00",
+          "day": "2026-09-05",
+          "entry_id": "00000000-0000-4000-8000-000000000502",
+          "estimate": null,
+          "label": "Pâtes à la tomate",
+          "nutrition": {
+            "carbs_g": 100,
+            "fat_g": 12,
+            "fiber_g": 7,
+            "kcal": 600,
+            "protein_g": 20
+          },
+          "origin": "chatgpt_mobile",
+          "product_id": null,
+          "quantity": {
+            "unit": "portion",
+            "value": 1
+          },
+          "recipe_id": null,
+          "source": {
+            "description": "Estimation générique inventée",
+            "type": "generic_estimate"
+          },
+          "state": "active",
+          "updated_at": "2026-09-05T20:00:30+02:00",
+          "version": 1
+        }
+      ],
+      "imported_snapshots": [],
+      "schema_version": 2,
+      "timezone": "Europe/Zurich",
+      "updated_at": "2026-09-05T23:00:00+02:00"
+    },
+    "journal/2026-09-06.json": {
+      "closed_explicitly": false,
+      "daily_estimates": [
+        {
+          "assessment_id": "00000000-0000-4000-8000-000000000061",
+          "created_at": "2026-09-06T22:00:00+02:00",
+          "day": "2026-09-06",
+          "kcal": 1900,
+          "kcal_high": 2100,
+          "kcal_low": 1700,
+          "kind": "estimate",
+          "replaces_entry_ids": [],
+          "source": {
+            "description": "Estimation globale validée (essai)",
+            "type": "user_estimate"
+          },
+          "state": "active",
+          "updated_at": "2026-09-06T22:01:00+02:00",
+          "user_confirmed": true,
+          "version": 1
+        },
+        {
+          "assessment_id": "00000000-0000-4000-8000-000000000061",
+          "created_at": "2026-09-06T22:00:00+02:00",
+          "day": "2026-09-06",
+          "kcal": 1900,
+          "kcal_high": 2100,
+          "kcal_low": 1700,
+          "kind": "estimate",
+          "replaces_entry_ids": [],
+          "source": {
+            "description": "Estimation globale validée (essai)",
+            "type": "user_estimate"
+          },
+          "state": "deleted",
+          "updated_at": "2026-09-06T22:02:00+02:00",
+          "user_confirmed": true,
+          "version": 2
+        }
+      ],
+      "day": "2026-09-06",
+      "detailed_tracking_complete": true,
+      "events": [
+        {
+          "category": "lunch",
+          "confidence": "medium",
+          "consumed_at": "2026-09-06T12:00:00+02:00",
+          "created_at": "2026-09-06T12:00:00+02:00",
+          "day": "2026-09-06",
+          "entry_id": "00000000-0000-4000-8000-000000000601",
+          "estimate": null,
+          "label": "Poulet et légumes",
+          "nutrition": {
+            "carbs_g": 90,
+            "fat_g": 25,
+            "fiber_g": 8,
+            "kcal": 800,
+            "protein_g": 50
+          },
+          "origin": "chatgpt_mobile",
+          "product_id": null,
+          "quantity": {
+            "unit": "portion",
+            "value": 1
+          },
+          "recipe_id": null,
+          "source": {
+            "description": "Estimation générique inventée",
+            "type": "generic_estimate"
+          },
+          "state": "active",
+          "updated_at": "2026-09-06T12:00:30+02:00",
+          "version": 1
+        },
+        {
+          "category": "dinner",
+          "confidence": "medium",
+          "consumed_at": "2026-09-06T19:30:00+02:00",
+          "created_at": "2026-09-06T19:30:00+02:00",
+          "day": "2026-09-06",
+          "entry_id": "00000000-0000-4000-8000-000000000602",
+          "estimate": null,
+          "label": "Omelette",
+          "nutrition": {
+            "carbs_g": 5,
+            "fat_g": 55,
+            "fiber_g": 1,
+            "kcal": 700,
+            "protein_g": 40
+          },
+          "origin": "chatgpt_mobile",
+          "product_id": null,
+          "quantity": {
+            "unit": "portion",
+            "value": 1
+          },
+          "recipe_id": null,
+          "source": {
+            "description": "Estimation générique inventée",
+            "type": "generic_estimate"
+          },
+          "state": "active",
+          "updated_at": "2026-09-06T19:30:30+02:00",
+          "version": 1
+        }
+      ],
+      "imported_snapshots": [],
+      "schema_version": 2,
+      "timezone": "Europe/Zurich",
+      "updated_at": "2026-09-06T23:00:00+02:00"
+    },
+    "journal/2026-09-07.json": {
+      "closed_explicitly": true,
+      "day": "2026-09-07",
+      "events": [],
+      "imported_snapshots": [],
+      "schema_version": 1,
+      "timezone": "Europe/Zurich",
+      "updated_at": "2026-09-07T23:00:00+02:00"
+    },
+    "journal/2026-09-08.json": {
+      "closed_explicitly": false,
+      "day": "2026-09-08",
+      "events": [
+        {
+          "category": "snack",
+          "confidence": "medium",
+          "consumed_at": "2026-09-08T15:00:00+02:00",
+          "created_at": "2026-09-08T15:00:00+02:00",
+          "day": "2026-09-08",
+          "entry_id": "00000000-0000-4000-8000-000000000801",
+          "estimate": null,
+          "label": "Pomme",
+          "nutrition": {
+            "carbs_g": 18.5,
+            "fat_g": 0.3,
+            "fiber_g": 3.6,
+            "kcal": 78,
+            "protein_g": 0.4
+          },
+          "origin": "chatgpt_mobile",
+          "product_id": null,
+          "quantity": {
+            "unit": "g",
+            "value": 150
+          },
+          "recipe_id": null,
+          "source": {
+            "description": "Estimation générique inventée",
+            "type": "generic_estimate"
+          },
+          "state": "active",
+          "updated_at": "2026-09-08T15:00:30+02:00",
+          "version": 1
+        }
+      ],
+      "imported_snapshots": [],
+      "schema_version": 1,
+      "timezone": "Europe/Zurich",
+      "updated_at": "2026-09-08T23:00:00+02:00"
+    },
+    "preferences.json": {
+      "preferences": [
+        {
+          "active": true,
+          "created_at": "2026-08-20T10:00:00+02:00",
+          "kind": "cooking_default",
+          "preference_id": "10000000-0000-4000-8000-000000000001",
+          "rule": "Le riz est pesé cuit sauf mention contraire.",
+          "scope": "project_only",
+          "source": "user_explicit",
+          "trigger": "riz",
+          "updated_at": "2026-08-20T10:00:00+02:00"
+        },
+        {
+          "active": false,
+          "created_at": "2026-08-21T10:00:00+02:00",
+          "kind": "portion_default",
+          "preference_id": "10000000-0000-4000-8000-000000000002",
+          "rule": "Un yaourt fait 125 g.",
+          "scope": "project_only",
+          "source": "user_explicit",
+          "trigger": "yaourt",
+          "updated_at": "2026-08-25T10:00:00+02:00"
+        }
+      ],
+      "schema_version": 1
+    },
+    "profile.json": {
+      "context": {
+        "height_cm": 175,
+        "maintenance_kcal_user_estimate": 2900,
+        "phase": "cut",
+        "typical_steps_per_day_user_estimate": 12000
+      },
+      "current_reference_weight_kg": 72.5,
+      "day_boundary": "00:00",
+      "goals": [
+        {
+          "carbs_rule": "remaining_calories",
+          "effective_from": "2026-09-01",
+          "fat_g_per_kg": 0.9,
+          "fiber_g_per_1000_kcal": 14.0,
+          "fiber_is_bonus": true,
+          "kcal": 2600,
+          "protein_ideal_g_per_kg": 2.0,
+          "protein_min_g_per_kg": 1.6,
+          "reference_weight_kg": 74.0
+        },
+        {
+          "carbs_rule": "remaining_calories",
+          "effective_from": "2026-09-04",
+          "fat_g_per_kg": 0.85,
+          "fiber_g_per_1000_kcal": 14.0,
+          "fiber_is_bonus": true,
+          "kcal": 2350,
+          "kcal_limit": 2450,
+          "protein_ideal_g_per_kg": 2.1,
+          "protein_min_g_per_kg": 1.7
+        }
+      ],
+      "schema_version": 1,
+      "timezone": "Europe/Zurich"
+    },
+    "recipes.json": {
+      "recipes": [
+        {
+          "active": true,
+          "aliases": [
+            "porridge"
+          ],
+          "default_match_when_unqualified": true,
+          "ingredients": [
+            {
+              "ingredient_id": "flocons",
+              "label": "Flocons d'avoine",
+              "nutrition_per_100": {
+                "carbs_g": 59,
+                "fat_g": 7,
+                "fiber_g": 10,
+                "kcal": 370,
+                "protein_g": 13
+              },
+              "quantity_g": 50
+            },
+            {
+              "ingredient_id": "lait",
+              "label": "Lait demi-écrémé",
+              "nutrition_per_100": {
+                "carbs_g": 4.8,
+                "fat_g": 1.5,
+                "fiber_g": null,
+                "kcal": 46,
+                "protein_g": 3.3
+              },
+              "quantity_g": 200
+            }
+          ],
+          "name": "Porridge",
+          "recipe_id": "porridge-essai",
+          "version": 1
+        },
+        {
+          "active": true,
+          "aliases": [
+            "porridge"
+          ],
+          "default_match_when_unqualified": true,
+          "ingredients": [
+            {
+              "ingredient_id": "flocons",
+              "label": "Flocons d'avoine",
+              "nutrition_per_100": {
+                "carbs_g": 59,
+                "fat_g": 7,
+                "fiber_g": 10,
+                "kcal": 370,
+                "protein_g": 13
+              },
+              "quantity_g": 60
+            },
+            {
+              "ingredient_id": "lait",
+              "label": "Lait demi-écrémé",
+              "nutrition_per_100": {
+                "carbs_g": 4.8,
+                "fat_g": 1.5,
+                "fiber_g": null,
+                "kcal": 46,
+                "protein_g": 3.3
+              },
+              "quantity_g": 200
+            }
+          ],
+          "name": "Porridge",
+          "recipe_id": "porridge-essai",
+          "version": 2
+        },
+        {
+          "active": false,
+          "ingredients": [],
+          "name": "Salade composée",
+          "recipe_id": "salade-essai",
+          "source_template": {
+            "composants": [
+              "salade verte",
+              "sauce",
+              "graines"
+            ]
+          },
+          "version": 1
+        }
+      ],
+      "schema_version": 1
+    },
+    "weights.json": {
+      "measurements": [
+        {
+          "day": "2026-09-01",
+          "kg": 73.4
+        },
+        {
+          "day": "2026-09-08",
+          "kg": 72.9
+        }
+      ],
+      "schema_version": 1
+    }
+  },
+  "format": "suivi-kcal-bundle",
+  "schema_version": 2
+}

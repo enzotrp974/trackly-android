@@ -1,0 +1,41 @@
+{
+  "id": "resp_hier_1",
+  "object": "response",
+  "status": "completed",
+  "error": null,
+  "incomplete_details": null,
+  "model": "gpt-6.1-sol",
+  "output": [
+    {
+      "type": "reasoning",
+      "id": "rs_hier_1",
+      "summary": [],
+      "encrypted_content": "gAAAA-raisonnement-chiffre-simule-hier_1"
+    },
+    {
+      "type": "function_call",
+      "id": "fc_hier_1",
+      "call_id": "call_hier_1",
+      "name": "record_consumptions",
+      "arguments": "{\"items\": [{\"food\": {\"label\": \"Yaourt nature\", \"quantity\": 125, \"unit\": \"g\", \"kcal\": 75, \"protein_g\": 4.5, \"carbs_g\": 6, \"fat_g\": 3.8, \"fiber_g\": null, \"assumptions\": [], \"confidence\": \"high\"}, \"moment\": \"soir\", \"day\": \"2026-11-01\"}], \"question\": null}",
+      "status": "completed"
+    }
+  ],
+  "usage": {
+    "input_tokens": 2850,
+    "input_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 2400
+    },
+    "output_tokens": 410,
+    "output_tokens_details": {
+      "reasoning_tokens": 320
+    },
+    "total_tokens": 3260
+  },
+  "tool_usage": {
+    "web_search": {
+      "num_requests": 0
+    }
+  }
+}

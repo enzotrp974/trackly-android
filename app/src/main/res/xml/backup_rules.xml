@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Sauvegarde automatique Android, Android 11 et moins : mêmes règles que
+  data_extraction_rules.xml (seule la base Trackly et son journal WAL).
+-->
+<full-backup-content>
+    <include domain="database" path="trackly.db" />
+    <include domain="database" path="trackly.db-wal" />
+</full-backup-content>

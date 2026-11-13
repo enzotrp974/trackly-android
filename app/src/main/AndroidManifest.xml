@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Assistant : appels directs à l'API OpenAI (Responses API). -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Distinguer « pas d'Internet » d'une erreur OpenAI avant d'envoyer. -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Dictée : demandée au premier usage du micro, avec explication ; le son n'est jamais conservé. -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-feature android:name="android.hardware.microphone" android:required="false" />
+    <!-- Clé OpenAI par QR code (Réglages) : demandée à l'ouverture de l'écran de scan, avec explication ; aucune image n'est conservée. -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <!-- Alertes de sauvegarde (Android 13+). -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <!-- Appel. Exigées par la surveillance réseau de WebRTC (sans elles : plantage natif à la connexion). -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- Mode communication et haut-parleur pendant l'appel. -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <!-- Service de premier plan de type micro : l'appel continue écran éteint ; lancé seulement depuis l'écran d'appel. -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE" />
+    <!-- Vibration courte au lancement de l'appel et à « je t'écoute ». -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".TracklyApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Trackly">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Appel : garde l'appel vivant écran éteint ; démarré par l'écran d'appel, arrêté au raccroché. -->
+        <service
+            android:name=".call.android.CallService"
+            android:exported="false"
+            android:foregroundServiceType="microphone" />
+
+        <!-- Photo prise avec l'appareil photo : fichier temporaire du cache, pas de galerie. -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.photos"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/photo_paths" />
+        </provider>
+    </application>
+</manifest>

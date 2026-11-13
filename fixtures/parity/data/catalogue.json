@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "products": [
+    {
+      "product_id": "yaourt-nature-essai",
+      "name": "Yaourt nature",
+      "brand": null,
+      "country": null,
+      "barcode": null,
+      "sold_state": "as_sold",
+      "nutrition_per_100": {
+        "kcal": 61,
+        "protein_g": 4.8,
+        "carbs_g": 4.7,
+        "fat_g": 2.2,
+        "fiber_g": 0
+      },
+      "source": {
+        "type": "generic_estimate",
+        "description": "Valeurs génériques inventées pour le test"
+      },
+      "confidence": "medium",
+      "verified": false,
+      "favorite": true,
+      "use_count": 2,
+      "counted_entry_ids": [
+        "00000000-0000-4000-8000-000000000104",
+        "00000000-0000-4000-8000-000000000201"
+      ],
+      "last_used_at": "2026-09-02T08:05:00+02:00",
+      "last_portion": {
+        "value": 150,
+        "unit": "g"
+      },
+      "usual_portions": [
+        {
+          "value": 150,
+          "unit": "g"
+        }
+      ],
+      "aliases": [
+        "yaourt"
+      ],
+      "nutrition_basis": {
+        "value": 100,
+        "unit": "g"
+      },
+      "nutrition_status": "complete",
+      "active": true
+    },
+    {
+      "product_id": "barre-cereales-essai",
+      "name": "Barre de céréales",
+      "brand": "Marque générique",
+      "country": null,
+      "barcode": null,
+      "sold_state": "as_sold",
+      "nutrition_per_100": {
+        "kcal": 400,
+        "protein_g": 8,
+        "carbs_g": 62,
+        "fat_g": null,
+        "fiber_g": null
+      },
+      "source": {
+        "type": "generic_estimate",
+        "description": "Valeurs génériques inventées pour le test"
+      },
+      "confidence": "medium",
+      "verified": false,
+      "favorite": false,
+      "use_count": 0,
+      "counted_entry_ids": [],
+      "last_used_at": null,
+      "last_portion": null,
+      "usual_portions": [],
+      "aliases": [
+        "barre"
+      ],
+      "nutrition_status": "partial",
+      "nutrition_basis": {
+        "value": 100,
+        "unit": "g"
+      },
+      "active": true
+    },
+    {
+      "product_id": "riz-cuit-essai",
+      "name": "Riz blanc cuit",
+      "brand": null,
+      "country": null,
+      "barcode": null,
+      "sold_state": null,
+      "nutrition_per_100": {
+        "kcal": 130,
+        "protein_g": 2.7,
+        "carbs_g": 28,
+        "fat_g": 0.3,
+        "fiber_g": 0.4
+      },
+      "source": {
+        "type": "generic_estimate",
+        "description": "Valeurs génériques inventées pour le test"
+      },
+      "confidence": "medium",
+      "verified": false,
+      "favorite": false,
+      "use_count": 0,
+      "counted_entry_ids": [],
+      "last_used_at": null,
+      "last_portion": null,
+      "usual_portions": [],
+      "nutrition_basis": {
+        "value": 100,
+        "unit": "g",
+        "state": "cuit"
+      },
+      "active": false
+    }
+  ]
+}

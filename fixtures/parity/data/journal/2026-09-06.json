@@ -1,0 +1,111 @@
+{
+  "schema_version": 2,
+  "day": "2026-09-06",
+  "timezone": "Europe/Zurich",
+  "events": [
+    {
+      "entry_id": "00000000-0000-4000-8000-000000000601",
+      "version": 1,
+      "state": "active",
+      "origin": "chatgpt_mobile",
+      "day": "2026-09-06",
+      "consumed_at": "2026-09-06T12:00:00+02:00",
+      "category": "lunch",
+      "label": "Poulet et légumes",
+      "quantity": {
+        "value": 1,
+        "unit": "portion"
+      },
+      "nutrition": {
+        "kcal": 800,
+        "protein_g": 50,
+        "carbs_g": 90,
+        "fat_g": 25,
+        "fiber_g": 8
+      },
+      "source": {
+        "type": "generic_estimate",
+        "description": "Estimation générique inventée"
+      },
+      "confidence": "medium",
+      "product_id": null,
+      "recipe_id": null,
+      "estimate": null,
+      "created_at": "2026-09-06T12:00:00+02:00",
+      "updated_at": "2026-09-06T12:00:30+02:00"
+    },
+    {
+      "entry_id": "00000000-0000-4000-8000-000000000602",
+      "version": 1,
+      "state": "active",
+      "origin": "chatgpt_mobile",
+      "day": "2026-09-06",
+      "consumed_at": "2026-09-06T19:30:00+02:00",
+      "category": "dinner",
+      "label": "Omelette",
+      "quantity": {
+        "value": 1,
+        "unit": "portion"
+      },
+      "nutrition": {
+        "kcal": 700,
+        "protein_g": 40,
+        "carbs_g": 5,
+        "fat_g": 55,
+        "fiber_g": 1
+      },
+      "source": {
+        "type": "generic_estimate",
+        "description": "Estimation générique inventée"
+      },
+      "confidence": "medium",
+      "product_id": null,
+      "recipe_id": null,
+      "estimate": null,
+      "created_at": "2026-09-06T19:30:00+02:00",
+      "updated_at": "2026-09-06T19:30:30+02:00"
+    }
+  ],
+  "imported_snapshots": [],
+  "closed_explicitly": false,
+  "updated_at": "2026-09-06T23:00:00+02:00",
+  "daily_estimates": [
+    {
+      "assessment_id": "00000000-0000-4000-8000-000000000061",
+      "version": 1,
+      "state": "active",
+      "day": "2026-09-06",
+      "kind": "estimate",
+      "kcal": 1900,
+      "kcal_low": 1700,
+      "kcal_high": 2100,
+      "source": {
+        "type": "user_estimate",
+        "description": "Estimation globale validée (essai)"
+      },
+      "user_confirmed": true,
+      "replaces_entry_ids": [],
+      "created_at": "2026-09-06T22:00:00+02:00",
+      "updated_at": "2026-09-06T22:01:00+02:00"
+    },
+    {
+      "assessment_id": "00000000-0000-4000-8000-000000000061",
+      "version": 2,
+      "state": "deleted",
+      "day": "2026-09-06",
+      "kind": "estimate",
+      "kcal": 1900,
+      "kcal_low": 1700,
+      "kcal_high": 2100,
+      "source": {
+        "type": "user_estimate",
+        "description": "Estimation globale validée (essai)"
+      },
+      "user_confirmed": true,
+      "replaces_entry_ids": [],
+      "created_at": "2026-09-06T22:00:00+02:00",
+      "updated_at": "2026-09-06T22:02:00+02:00"
+    }
+  ],
+  "detailed_tracking_complete": true
+}

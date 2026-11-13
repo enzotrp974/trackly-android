@@ -1,0 +1,13 @@
+name: Bug report
+description: Something does not work as expected
+labels: [bug]
+body:
+  - type: textarea
+    attributes:
+      label: What happened
+      description: Steps to reproduce, what you expected, what you saw. Do not paste API keys or personal health data.
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: App version and Android version

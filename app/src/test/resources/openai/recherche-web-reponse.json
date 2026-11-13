@@ -1,0 +1,67 @@
+{
+  "id": "resp_simule_recherche_web",
+  "object": "response",
+  "created_at": 1793600000,
+  "status": "completed",
+  "model": "gpt-6.1-sol",
+  "error": null,
+  "output": [
+    {
+      "type": "web_search_call",
+      "id": "ws_simule_1",
+      "status": "completed",
+      "action": {
+        "type": "search",
+        "query": "McDonald's Big Mac valeurs nutritionnelles"
+      }
+    },
+    {
+      "type": "web_search_call",
+      "id": "ws_simule_2",
+      "status": "completed",
+      "action": {
+        "type": "open_page",
+        "url": "https://www.exemple.com/fr/produits/big-mac"
+      }
+    },
+    {
+      "type": "message",
+      "id": "msg_simule_1",
+      "status": "completed",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "Je me suis basé sur la fiche nutritionnelle de l'enseigne. ([exemple.com](https://www.exemple.com/fr/produits/big-mac?utm_source=openai))",
+          "annotations": [
+            {
+              "type": "url_citation",
+              "start_index": 59,
+              "end_index": 137,
+              "url": "https://www.exemple.com/fr/produits/big-mac?utm_source=openai",
+              "title": "Big Mac | McDonald's"
+            }
+          ],
+          "logprobs": []
+        }
+      ]
+    }
+  ],
+  "usage": {
+    "input_tokens": 9400,
+    "input_tokens_details": {
+      "cached_tokens": 2048,
+      "cache_write_tokens": 0
+    },
+    "output_tokens": 210,
+    "output_tokens_details": {
+      "reasoning_tokens": 80
+    },
+    "total_tokens": 9610
+  },
+  "tool_usage": {
+    "web_search": {
+      "num_requests": 1
+    }
+  }
+}

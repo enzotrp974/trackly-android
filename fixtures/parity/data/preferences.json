@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "preferences": [
+    {
+      "preference_id": "10000000-0000-4000-8000-000000000001",
+      "kind": "cooking_default",
+      "trigger": "riz",
+      "rule": "Le riz est pesé cuit sauf mention contraire.",
+      "scope": "project_only",
+      "source": "user_explicit",
+      "active": true,
+      "created_at": "2026-08-20T10:00:00+02:00",
+      "updated_at": "2026-08-20T10:00:00+02:00"
+    },
+    {
+      "preference_id": "10000000-0000-4000-8000-000000000002",
+      "kind": "portion_default",
+      "trigger": "yaourt",
+      "rule": "Un yaourt fait 125 g.",
+      "scope": "project_only",
+      "source": "user_explicit",
+      "active": false,
+      "created_at": "2026-08-21T10:00:00+02:00",
+      "updated_at": "2026-08-25T10:00:00+02:00"
+    }
+  ]
+}

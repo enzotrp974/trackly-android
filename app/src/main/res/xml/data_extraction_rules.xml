@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Sauvegarde automatique Android, Android 12 et plus.
+  Seule la base Trackly part : le fichier et son journal WAL (l'index « -shm » est reconstruit
+  par SQLite). Dès qu'une règle <include> existe, tout le reste est exclu : préférences,
+  base de WorkManager, fichiers. Le dossier no_backup (clé OpenAI chiffrée, copies de
+  sécurité locales, restauration en cours) est de toute façon toujours exclu par Android.
+  disableIfNoEncryptionCapabilities="false" : la sauvegarde reste active même sans écran de
+  verrouillage (la copie Drive de nuit n'est pas chiffrée non plus) ; avec un code de
+  verrouillage, Android la chiffre de bout en bout.
+-->
+<data-extraction-rules>
+    <cloud-backup disableIfNoEncryptionCapabilities="false">
+        <include domain="database" path="trackly.db" />
+        <include domain="database" path="trackly.db-wal" />
+    </cloud-backup>
+    <device-transfer>
+        <include domain="database" path="trackly.db" />
+        <include domain="database" path="trackly.db-wal" />
+    </device-transfer>
+</data-extraction-rules>

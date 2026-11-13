@@ -1,0 +1,42 @@
+{
+  "id": "resp_objectif_demain_2",
+  "object": "response",
+  "status": "completed",
+  "error": null,
+  "incomplete_details": null,
+  "model": "gpt-6.1-sol",
+  "output": [
+    {
+      "type": "reasoning",
+      "id": "rs_objectif_demain_2",
+      "summary": [],
+      "encrypted_content": "gAAAA-simule-objectif_demain_2"
+    },
+    {
+      "type": "message",
+      "id": "msg_objectif_demain_2",
+      "status": "completed",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "C’est noté : 2 200 kcal à partir de demain. Aujourd’hui reste à 2 600 kcal.",
+          "annotations": [],
+          "logprobs": []
+        }
+      ]
+    }
+  ],
+  "usage": {
+    "input_tokens": 3300,
+    "input_tokens_details": {
+      "cached_tokens": 2400,
+      "cache_write_tokens": 0
+    },
+    "output_tokens": 50,
+    "output_tokens_details": {
+      "reasoning_tokens": 10
+    },
+    "total_tokens": 3350
+  }
+}

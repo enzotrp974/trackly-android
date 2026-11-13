@@ -1,0 +1,171 @@
+{
+  "schema_version": 1,
+  "day": "2026-09-01",
+  "timezone": "Europe/Zurich",
+  "events": [
+    {
+      "entry_id": "00000000-0000-4000-8000-000000000101",
+      "version": 1,
+      "state": "active",
+      "origin": "chatgpt_mobile",
+      "day": "2026-09-01",
+      "consumed_at": "2026-09-01T07:45:00+02:00",
+      "category": "breakfast",
+      "label": "Porridge",
+      "quantity": {
+        "value": 1,
+        "unit": "portion"
+      },
+      "nutrition": {
+        "kcal": 410,
+        "protein_g": 18,
+        "carbs_g": 58,
+        "fat_g": 10,
+        "fiber_g": 6
+      },
+      "source": {
+        "type": "generic_estimate",
+        "description": "Estimation générique inventée"
+      },
+      "confidence": "medium",
+      "product_id": null,
+      "recipe_id": "porridge-essai",
+      "estimate": null,
+      "created_at": "2026-09-01T07:45:00+02:00",
+      "updated_at": "2026-09-01T07:45:30+02:00"
+    },
+    {
+      "entry_id": "00000000-0000-4000-8000-000000000102",
+      "version": 1,
+      "state": "active",
+      "origin": "chatgpt_mobile",
+      "day": "2026-09-01",
+      "consumed_at": "2026-09-01T12:30:00+02:00",
+      "category": "lunch",
+      "label": "Riz et poulet",
+      "quantity": {
+        "value": 1,
+        "unit": "portion"
+      },
+      "nutrition": {
+        "kcal": 650,
+        "protein_g": 45,
+        "carbs_g": 80,
+        "fat_g": 12,
+        "fiber_g": 3
+      },
+      "source": {
+        "type": "generic_estimate",
+        "description": "Estimation générique inventée"
+      },
+      "confidence": "medium",
+      "product_id": "riz-cuit-essai",
+      "recipe_id": null,
+      "estimate": null,
+      "created_at": "2026-09-01T12:30:00+02:00",
+      "updated_at": "2026-09-01T12:30:30+02:00"
+    },
+    {
+      "entry_id": "00000000-0000-4000-8000-000000000102",
+      "version": 2,
+      "state": "active",
+      "origin": "chatgpt_mobile",
+      "day": "2026-09-01",
+      "consumed_at": "2026-09-01T12:30:00+02:00",
+      "category": "lunch",
+      "label": "Riz et poulet",
+      "quantity": {
+        "value": 1,
+        "unit": "portion"
+      },
+      "nutrition": {
+        "kcal": 700,
+        "protein_g": 48,
+        "carbs_g": 85,
+        "fat_g": 13,
+        "fiber_g": 3
+      },
+      "source": {
+        "type": "generic_estimate",
+        "description": "Estimation générique inventée"
+      },
+      "confidence": "medium",
+      "product_id": "riz-cuit-essai",
+      "recipe_id": null,
+      "estimate": null,
+      "created_at": "2026-09-01T12:30:00+02:00",
+      "updated_at": "2026-09-01T21:02:00+02:00"
+    },
+    {
+      "entry_id": "00000000-0000-4000-8000-000000000103",
+      "version": 1,
+      "state": "active",
+      "origin": "chatgpt_mobile",
+      "day": "2026-09-01",
+      "consumed_at": "2026-09-01T19:40:00+02:00",
+      "category": "dinner",
+      "label": "Pizza au restaurant",
+      "quantity": {
+        "value": 1,
+        "unit": "portion"
+      },
+      "nutrition": {
+        "kcal": 900,
+        "protein_g": 35,
+        "carbs_g": 100,
+        "fat_g": 38,
+        "fiber_g": 5
+      },
+      "source": {
+        "type": "restaurant_estimate",
+        "description": "Estimation générique inventée"
+      },
+      "confidence": "medium",
+      "product_id": null,
+      "recipe_id": null,
+      "estimate": {
+        "kcal_low": 800,
+        "kcal_high": 1050,
+        "assumptions": [
+          "pizza moyenne, pâte fine"
+        ]
+      },
+      "created_at": "2026-09-01T19:40:00+02:00",
+      "updated_at": "2026-09-01T19:40:30+02:00"
+    },
+    {
+      "entry_id": "00000000-0000-4000-8000-000000000104",
+      "version": 1,
+      "state": "active",
+      "origin": "chatgpt_mobile",
+      "day": "2026-09-01",
+      "consumed_at": "2026-09-01T16:10:00+02:00",
+      "category": "snack",
+      "label": "Yaourt nature",
+      "quantity": {
+        "value": 150,
+        "unit": "g"
+      },
+      "nutrition": {
+        "kcal": 91.5,
+        "protein_g": 7.2,
+        "carbs_g": 7.05,
+        "fat_g": 3.3,
+        "fiber_g": 0
+      },
+      "source": {
+        "type": "catalogue",
+        "description": "Estimation générique inventée"
+      },
+      "confidence": "medium",
+      "product_id": "yaourt-nature-essai",
+      "recipe_id": null,
+      "estimate": null,
+      "created_at": "2026-09-01T16:10:00+02:00",
+      "updated_at": "2026-09-01T16:10:30+02:00"
+    }
+  ],
+  "imported_snapshots": [],
+  "closed_explicitly": false,
+  "updated_at": "2026-09-01T23:00:00+02:00"
+}

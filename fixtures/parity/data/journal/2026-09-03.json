@@ -1,0 +1,114 @@
+{
+  "schema_version": 2,
+  "day": "2026-09-03",
+  "timezone": "Europe/Zurich",
+  "events": [
+    {
+      "entry_id": "00000000-0000-4000-8000-000000000301",
+      "version": 1,
+      "state": "active",
+      "origin": "chatgpt_mobile",
+      "day": "2026-09-03",
+      "consumed_at": "2026-09-03T21:00:00+02:00",
+      "category": "dinner",
+      "label": "Total de la journée (ancien agrégat)",
+      "quantity": {
+        "value": 1,
+        "unit": "portion"
+      },
+      "nutrition": {
+        "kcal": 2000,
+        "protein_g": 90,
+        "carbs_g": 220,
+        "fat_g": 70,
+        "fiber_g": 20
+      },
+      "source": {
+        "type": "generic_estimate",
+        "description": "Estimation générique inventée"
+      },
+      "confidence": "medium",
+      "product_id": null,
+      "recipe_id": null,
+      "estimate": null,
+      "created_at": "2026-09-03T21:00:00+02:00",
+      "updated_at": "2026-09-03T21:00:30+02:00"
+    },
+    {
+      "entry_id": "00000000-0000-4000-8000-000000000302",
+      "version": 1,
+      "state": "active",
+      "origin": "chatgpt_mobile",
+      "day": "2026-09-03",
+      "consumed_at": "2026-09-03T07:30:00+02:00",
+      "category": "breakfast",
+      "label": "Pain et confiture",
+      "quantity": {
+        "value": 1,
+        "unit": "portion"
+      },
+      "nutrition": {
+        "kcal": 300,
+        "protein_g": 8,
+        "carbs_g": 58,
+        "fat_g": 4,
+        "fiber_g": 3
+      },
+      "source": {
+        "type": "generic_estimate",
+        "description": "Estimation générique inventée"
+      },
+      "confidence": "medium",
+      "product_id": null,
+      "recipe_id": null,
+      "estimate": null,
+      "created_at": "2026-09-03T07:30:00+02:00",
+      "updated_at": "2026-09-03T07:30:30+02:00"
+    }
+  ],
+  "imported_snapshots": [],
+  "closed_explicitly": false,
+  "updated_at": "2026-09-03T23:00:00+02:00",
+  "daily_estimates": [
+    {
+      "assessment_id": "00000000-0000-4000-8000-000000000031",
+      "version": 1,
+      "state": "active",
+      "day": "2026-09-03",
+      "kind": "estimate",
+      "kcal": 2500,
+      "kcal_low": 2300,
+      "kcal_high": 2700,
+      "source": {
+        "type": "user_estimate",
+        "description": "Estimation globale validée (essai)"
+      },
+      "user_confirmed": true,
+      "replaces_entry_ids": [
+        "00000000-0000-4000-8000-000000000301"
+      ],
+      "created_at": "2026-09-03T22:00:00+02:00",
+      "updated_at": "2026-09-03T22:01:00+02:00"
+    },
+    {
+      "assessment_id": "00000000-0000-4000-8000-000000000031",
+      "version": 2,
+      "state": "active",
+      "day": "2026-09-03",
+      "kind": "estimate",
+      "kcal": 2600,
+      "kcal_low": 2400,
+      "kcal_high": 2800,
+      "source": {
+        "type": "user_estimate",
+        "description": "Estimation globale validée (essai)"
+      },
+      "user_confirmed": true,
+      "replaces_entry_ids": [
+        "00000000-0000-4000-8000-000000000301"
+      ],
+      "created_at": "2026-09-03T22:00:00+02:00",
+      "updated_at": "2026-09-03T22:02:00+02:00"
+    }
+  ]
+}
